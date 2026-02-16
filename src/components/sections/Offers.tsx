@@ -1,0 +1,76 @@
+import offersHero from "@/assets/offers-hero.jpg";
+import staffingHero from "@/assets/staffing-hero.jpg";
+import cocktail4 from "@/assets/cocktail-4.jpg";
+import cocktail5 from "@/assets/cocktail-5.jpg";
+
+const offers = [
+  {
+    number: "01",
+    title: "Event Planning",
+    description:
+      "A successful event begins with a quality bar. We bring character and an extra dimension to your evening. We take the time to design a tailor-made experience that meets your expectations and aligns perfectly with your vision.",
+    image: offersHero,
+  },
+  {
+    number: "02",
+    title: "Cocktail Workshops",
+    description:
+      "Workshops involving cocktail tasting, making, or both! We introduce you to the world of mixology and the history of spirits — and we also teach you how to craft truly great cocktails on your own. As a bonus, we help you create your unique signature cocktail.",
+    image: cocktail4,
+  },
+  {
+    number: "03",
+    title: "Staffing & Execution",
+    description:
+      "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips! Efficient and delicious cocktails at a low cost — what more could you ask for?",
+    image: staffingHero,
+  },
+  {
+    number: "04",
+    title: "Signature Cocktail Menus",
+    description:
+      "We help you design a high-end cocktail menu with optimal productivity. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
+    image: cocktail5,
+  },
+];
+
+const Offers = () => {
+  return (
+    <section id="offers" className="py-24 md:py-32 bg-background">
+      <div className="container max-w-6xl mx-auto px-6">
+        <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
+          What We Do
+        </p>
+        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">
+          Our Offers
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-8">
+          {offers.map((offer) => (
+            <div key={offer.number} className="group relative overflow-hidden">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src={offer.image}
+                  alt={`${offer.title} - SOMA Cocktail Club`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+              </div>
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent flex flex-col justify-end p-8">
+                <span className="font-serif text-4xl text-accent/60 mb-1">{offer.number}</span>
+                <h3 className="font-serif italic text-2xl text-primary-foreground mb-3">
+                  {offer.title}
+                </h3>
+                <p className="text-primary-foreground/70 text-sm font-sans leading-relaxed max-w-sm">
+                  {offer.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Offers;
