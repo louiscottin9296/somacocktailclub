@@ -9,8 +9,7 @@ const offers = [
     title: "Event Planning",
     description:
       "A successful event begins with a quality bar. We bring character and an extra dimension to your evening. We take the time to design a tailor-made experience that meets your expectations and aligns perfectly with your vision.",
-    image: offersHero,
-    imageClass: "scale-[0.85] object-center",
+    image: staffingHero,
   },
   {
     number: "02",
@@ -24,7 +23,7 @@ const offers = [
     title: "Staffing & Execution",
     description:
       "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal speed-to-quality ratio at every stage of production.",
-    image: staffingHero,
+    image: offersHero,
   },
   {
     number: "04",
@@ -51,7 +50,7 @@ const Offers = () => {
                 <img
                   src={offer.image}
                   alt={`${offer.title} - SOMA Cocktail Club`}
-                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${(offer as any).imageClass || ''}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
               {/* Overlay */}
