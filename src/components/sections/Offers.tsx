@@ -13,7 +13,7 @@ const offers = [
 },
 {
   number: "02",
-  title: "Cocktail Workshops",
+  title: "Signature Cocktail Menus",
   description:
   "Workshops involving cocktail tasting, making, or both! We introduce you to the world of mixology and the history of spirits — and we also teach you how to craft truly great cocktails on your own. As a bonus, we help you create your unique signature cocktail.",
   image: cocktail4
