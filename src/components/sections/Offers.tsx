@@ -1,4 +1,4 @@
-import offersHero from "@/assets/offers-hero.jpg";
+import staffingNew from "@/assets/staffing-new.jpg";
 import staffingHero from "@/assets/staffing-hero.jpg";
 import cocktail4 from "@/assets/cocktail-4.jpg";
 import cocktail5 from "@/assets/cocktail-5.jpg";
@@ -23,7 +23,7 @@ const offers = [
     title: "Staffing & Execution",
     description:
       "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal speed-to-quality ratio at every stage of production.",
-    image: offersHero,
+    image: staffingNew,
   },
   {
     number: "04",
