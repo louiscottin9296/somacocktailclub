@@ -15,7 +15,7 @@ const offers = [
   number: "02",
   title: "Signature Cocktail Menus",
   description:
-  "Workshops involving cocktail tasting, making, or both! We introduce you to the world of mixology and the history of spirits — and we also teach you how to craft truly great cocktails on your own. As a bonus, we help you create your unique signature cocktail.",
+  "We help you design a high-end cocktail menu with optimal productivity. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
   image: cocktail4
 },
 {
