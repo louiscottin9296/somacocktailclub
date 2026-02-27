@@ -15,7 +15,7 @@ const offers = [
     number: "02",
     title: "Signature Cocktail Menus",
     description:
-      "We work with premium spirits, fresh & homemade ingredients, and offer our creative advice to help you design a high-end & custom-made menu. By suggesting drinks that complement the event’s concept, brand, and creative direction, we make sure each event is unique & memorable.",
+      "We offer our creative advice to help you design a high-end & custom menu. By suggesting drinks that complement the event’s concept, brand, and creative direction, we make sure each event is unique & memorable.",
     image: cocktail5,
   },
   {
