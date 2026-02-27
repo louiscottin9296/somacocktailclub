@@ -21,26 +21,26 @@ const Gallery = () => {
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {cocktails.map((src, index) => (
-            <div
-              key={index}
-              className={`overflow-hidden group ${
-                index === 0 || index === 5 ? "row-span-2" : ""
-              }`}
-            >
+          {cocktails.map((src, index) =>
+          <div
+            key={index}
+            className={`overflow-hidden group ${
+            index === 0 || index === 5 ? "row-span-2" : ""}`
+            }>
+
               <div className={`${index === 0 || index === 5 ? "aspect-[3/5]" : "aspect-square"} overflow-hidden`}>
                 <img
-                  src={src}
-                  alt={`SOMA signature cocktail ${index + 1}`}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                />
+                src={src}
+                alt={`SOMA signature cocktail ${index + 1}`}
+                className="w-full h-full group-hover:scale-110 transition-transform duration-700 object-contain" />
+
               </div>
             </div>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Gallery;
