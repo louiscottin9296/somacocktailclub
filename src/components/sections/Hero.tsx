@@ -15,12 +15,12 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl">
-        <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/60 font-sans mb-3">
-          Cocktail Club
-        </p>
         <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-primary-foreground mb-2 leading-none tracking-wide">
           SOMA
         </h1>
+        <p className="text-xs tracking-[0.4em] uppercase text-primary-foreground/60 font-sans mb-3">
+          Cocktail Club
+        </p>
         <div className="w-16 h-px bg-accent mx-auto my-8" />
         <p className="font-serif italic text-xl md:text-2xl text-primary-foreground/80 mb-8">
           The Art of Good Living
