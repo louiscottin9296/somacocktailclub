@@ -15,21 +15,21 @@ const offers = [
     number: "02",
     title: "Signature Cocktail Menus",
     description:
-      "We help you design a high-end cocktail menu with optimal productivity. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
+      "We work with premium spirits, fresh & homemade ingredients, and offer our creative advice to help you design a high-end & custom-made menu. By suggesting drinks that complement the event’s concept, brand, and creative direction, we make sure each event is unique & memorable.",
     image: cocktail5,
   },
   {
     number: "03",
     title: "Staffing & Execution",
     description:
-      "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips! Efficient and delicious cocktails at a low cost — what more could you ask for?",
+      "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
     image: staffingHero,
   },
   {
     number: "04",
     title: "Cocktail Workshops",
     description:
-      "We help you design a high-end cocktail menu with optimal productivity. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
+      "We introduce you to the world of mixology and the history of cocktails — and we teach you how to craft truly great cocktails at home. We also propose non-alcoholic workshops, where you get to discover exciting home-made alternatives.",
     image: cocktail4,
   },
 ];
