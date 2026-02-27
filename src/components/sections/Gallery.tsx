@@ -12,11 +12,11 @@ const cocktails = [cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cockta
 
 // Position configs for each slot: [left%, width%, opacity, z-index, scale]
 const positions: Record<string, { left: string; width: string; opacity: number; zIndex: number; scale: number }> = {
-  "-2": { left: "2%", width: "15%", opacity: 0.3, zIndex: 10, scale: 0.85 },
-  "-1": { left: "18%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
-  "0":  { left: "34%", width: "32%", opacity: 1,   zIndex: 30, scale: 1 },
-  "1":  { left: "62%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
-  "2":  { left: "83%", width: "15%", opacity: 0.3, zIndex: 10, scale: 0.85 },
+  "-2": { left: "1%", width: "16%", opacity: 0.3, zIndex: 10, scale: 0.85 },
+  "-1": { left: "19%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
+  "0":  { left: "35%", width: "30%", opacity: 1,   zIndex: 30, scale: 1 },
+  "1":  { left: "61%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
+  "2":  { left: "83%", width: "16%", opacity: 0.3, zIndex: 10, scale: 0.85 },
 };
 
 const Gallery = () => {
