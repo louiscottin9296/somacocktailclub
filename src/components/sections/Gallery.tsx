@@ -10,11 +10,24 @@ import cocktail8 from "@/assets/cocktail-8.jpg";
 
 const cocktails = [cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6, cocktail7, cocktail8];
 
+// Position configs for each slot: [left%, width%, opacity, z-index, scale]
+const positions: Record<string, { left: string; width: string; opacity: number; zIndex: number; scale: number }> = {
+  "-2": { left: "2%", width: "15%", opacity: 0.3, zIndex: 10, scale: 0.85 },
+  "-1": { left: "18%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
+  "0":  { left: "34%", width: "32%", opacity: 1,   zIndex: 30, scale: 1 },
+  "1":  { left: "62%", width: "20%", opacity: 0.6, zIndex: 20, scale: 0.92 },
+  "2":  { left: "83%", width: "15%", opacity: 0.3, zIndex: 10, scale: 0.85 },
+};
+
 const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const getIndex = useCallback((offset: number) => {
-    return (activeIndex + offset + cocktails.length) % cocktails.length;
+  const getOffset = useCallback((i: number) => {
+    let diff = i - activeIndex;
+    // Wrap around for circular carousel
+    if (diff > cocktails.length / 2) diff -= cocktails.length;
+    if (diff < -cocktails.length / 2) diff += cocktails.length;
+    return diff;
   }, [activeIndex]);
 
   const goTo = (index: number) => setActiveIndex(index);
@@ -29,47 +42,39 @@ const Gallery = () => {
           Signature Cocktails
         </h2>
 
-        <div className="relative flex items-center justify-center h-[360px] md:h-[500px]">
-          {/* Far left */}
-          <button
-            onClick={() => goTo(getIndex(-2))}
-            className="absolute left-0 md:left-[5%] z-10 w-[18%] md:w-[15%] aspect-[3/4] rounded-lg overflow-hidden opacity-30 hover:opacity-50 transition-all duration-500 cursor-pointer"
-          >
-            <img src={cocktails[getIndex(-2)]} alt="Cocktail preview" className="w-full h-full object-cover" />
-          </button>
+        <div className="relative h-[360px] md:h-[500px]">
+          {cocktails.map((src, i) => {
+            const offset = getOffset(i);
+            const isVisible = offset >= -2 && offset <= 2;
+            const pos = positions[String(offset)] ?? positions["0"];
+            const isCenter = offset === 0;
 
-          {/* Previous */}
-          <button
-            onClick={() => goTo(getIndex(-1))}
-            className="absolute left-[12%] md:left-[18%] z-20 w-[24%] md:w-[20%] aspect-[3/4] rounded-xl overflow-hidden opacity-60 hover:opacity-80 transition-all duration-500 cursor-pointer shadow-lg"
-          >
-            <img src={cocktails[getIndex(-1)]} alt="Previous cocktail" className="w-full h-full object-cover" />
-          </button>
-
-          {/* Center (active) */}
-          <div className="relative z-30 w-[44%] md:w-[32%] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl ring-1 ring-accent/20">
-            <img
-              src={cocktails[activeIndex]}
-              alt={`SOMA signature cocktail ${activeIndex + 1}`}
-              className="w-full h-full object-cover transition-all duration-500"
-            />
-          </div>
-
-          {/* Next */}
-          <button
-            onClick={() => goTo(getIndex(1))}
-            className="absolute right-[12%] md:right-[18%] z-20 w-[24%] md:w-[20%] aspect-[3/4] rounded-xl overflow-hidden opacity-60 hover:opacity-80 transition-all duration-500 cursor-pointer shadow-lg"
-          >
-            <img src={cocktails[getIndex(1)]} alt="Next cocktail" className="w-full h-full object-cover" />
-          </button>
-
-          {/* Far right */}
-          <button
-            onClick={() => goTo(getIndex(2))}
-            className="absolute right-0 md:right-[5%] z-10 w-[18%] md:w-[15%] aspect-[3/4] rounded-lg overflow-hidden opacity-30 hover:opacity-50 transition-all duration-500 cursor-pointer"
-          >
-            <img src={cocktails[getIndex(2)]} alt="Cocktail preview" className="w-full h-full object-cover" />
-          </button>
+            return (
+              <button
+                key={i}
+                onClick={() => !isCenter && goTo(i)}
+                disabled={isCenter}
+                className={`absolute top-1/2 aspect-[3/4] overflow-hidden ${
+                  isCenter ? "rounded-2xl ring-1 ring-accent/20 shadow-2xl cursor-default" : "rounded-xl shadow-lg cursor-pointer"
+                }`}
+                style={{
+                  left: pos.left,
+                  width: pos.width,
+                  opacity: isVisible ? pos.opacity : 0,
+                  zIndex: pos.zIndex,
+                  transform: `translateY(-50%) scale(${pos.scale})`,
+                  transition: "left 0.6s cubic-bezier(0.4, 0, 0.2, 1), width 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease, transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+                  pointerEvents: isVisible ? "auto" : "none",
+                }}
+              >
+                <img
+                  src={src}
+                  alt={`SOMA signature cocktail ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            );
+          })}
         </div>
 
         {/* Dots */}
@@ -78,8 +83,8 @@ const Gallery = () => {
             <button
               key={i}
               onClick={() => goTo(i)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                i === activeIndex ? "bg-accent w-6" : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+              className={`h-2 rounded-full transition-all duration-500 ${
+                i === activeIndex ? "bg-accent w-6" : "bg-muted-foreground/30 hover:bg-muted-foreground/50 w-2"
               }`}
               aria-label={`Go to cocktail ${i + 1}`}
             />
