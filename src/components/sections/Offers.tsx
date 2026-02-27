@@ -29,7 +29,7 @@ const offers = [
     number: "04",
     title: "Cocktail Workshops",
     description:
-      "We introduce you to the world of mixology and the history of cocktails — and we teach you how to craft truly great cocktails at home. We also propose non-alcoholic workshops, where you get to discover exciting home-made alternatives.",
+      "We introduce you to the world of mixology and the history of cocktails — so that you can start crafting top-tier cocktails at home. We also propose non-alcoholic workshops, where you will discover exciting home-made alternatives.",
     image: cocktail4,
   },
 ];
