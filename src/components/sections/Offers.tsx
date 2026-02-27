@@ -10,6 +10,7 @@ const offers = [
     description:
       "A successful event begins with a quality bar. We bring character and an extra dimension to your evening. We take the time to design a tailor-made experience that meets your expectations and aligns perfectly with your vision.",
     image: offersHero,
+    imageClass: "scale-[0.85] object-center",
   },
   {
     number: "02",
@@ -50,7 +51,7 @@ const Offers = () => {
                 <img
                   src={offer.image}
                   alt={`${offer.title} - SOMA Cocktail Club`}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ${(offer as any).imageClass || ''}`}
                 />
               </div>
               {/* Overlay */}
