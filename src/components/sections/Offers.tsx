@@ -13,7 +13,7 @@ const offers = [
 },
 {
   number: "02",
-  title: "Cocktail Workshops",
+  title: "Signature Cocktail Menus",
   description:
   "We help you design a high-end cocktail menu with optimal productivity. We consider the preparation time of each cocktail, keeping the ideal profitability-to-quality ratio in mind at every stage of production.",
   image: cocktail4
