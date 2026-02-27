@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import cocktail1 from "@/assets/cocktail-1.jpg";
 import cocktail2 from "@/assets/cocktail-2.jpg";
 import cocktail3 from "@/assets/cocktail-3.jpg";
@@ -31,6 +31,22 @@ const Gallery = () => {
   }, [activeIndex]);
 
   const goTo = (index: number) => setActiveIndex(index);
+  const goNext = () => setActiveIndex((prev) => (prev + 1) % cocktails.length);
+  const goPrev = () => setActiveIndex((prev) => (prev - 1 + cocktails.length) % cocktails.length);
+
+  // Swipe gesture support
+  const touchStartX = useRef<number | null>(null);
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      diff > 0 ? goNext() : goPrev();
+    }
+    touchStartX.current = null;
+  };
 
   return (
     <section className="py-24 md:py-32 bg-card overflow-hidden">
@@ -42,7 +58,7 @@ const Gallery = () => {
           Signature Cocktails
         </h2>
 
-        <div className="relative h-[360px] md:h-[500px]">
+        <div className="relative h-[360px] md:h-[500px] touch-pan-y" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           {cocktails.map((src, i) => {
             const offset = getOffset(i);
             const isVisible = offset >= -2 && offset <= 2;
