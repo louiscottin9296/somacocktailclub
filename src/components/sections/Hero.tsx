@@ -19,7 +19,7 @@ const Hero = () => {
         <img
           src={thtLogo}
           alt="SOMA Cocktail Club"
-          className="w-48 md:w-64 lg:w-80 mx-auto mb-4"
+          className="w-48 md:w-64 lg:w-80 mx-auto mb-4 opacity-80"
         />
         <div className="w-16 h-px bg-accent mx-auto my-8" />
         <p className="font-serif italic text-xl md:text-2xl text-primary-foreground/80 mb-8">
