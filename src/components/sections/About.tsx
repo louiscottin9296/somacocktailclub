@@ -13,11 +13,15 @@ const About = () => {
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
               Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in
-              crafting balanced, high-quality drinks and delivering a seamless bar catering experience.
+              crafting balanced, high-quality drinks and delivering a seamless bar catering experience. Our team
+              consists of dedicated cocktail enthusiasts who bring expertise, creativity, and a commitment to excellence
+              that is guaranteed to elevate any occasion.
             </p>
             <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">
-              Our team consists of dedicated cocktail enthusiasts who bring expertise, creativity, and a commitment to
-              excellence that is guaranteed to elevate any occasion.
+              With a background in prestigious bars and partnerships with leading brands, we combine traditional
+              techniques with innovative recipes, and work exclusively with high-quality spirits & fresh ingredients.
+              Sharing is at the heart of what we do: we always listen to your vision and deliver a fully personalized
+              experience for you and your guests.
             </p>
           </div>
 
