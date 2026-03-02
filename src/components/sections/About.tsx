@@ -8,8 +8,9 @@ const About = () => {
           {/* Text */}
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">Our Story</p>
-            <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-8 leading-tight">
-              Soma Cocktail Club
+            <h2 className="text-3xl md:text-5xl text-foreground mb-8 leading-tight">
+              <span className="font-sans font-semibold tracking-wide uppercase">SOMA</span>{" "}
+              <span className="font-serif italic">Cocktail Club</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
               Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in
