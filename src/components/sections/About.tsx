@@ -23,7 +23,7 @@ const About = () => {
               With a background in prestigious bars and partnerships with leading brands, we combine traditional
               techniques with innovative recipes, and work exclusively with high-quality spirits & fresh ingredients.
             </p>
-            <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">
+            <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
               Sharing is at the heart of what we do: we always listen to your vision and deliver a fully personalized
               experience for you and your guests.
             </p>
