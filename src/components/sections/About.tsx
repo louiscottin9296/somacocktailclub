@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-stretch">
           {/* Text */}
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">Our Story</p>
@@ -25,9 +25,9 @@ const About = () => {
             </p>
           </div>
 
-          {/* Image - fills full height of the grid row */}
-          <div className="h-full">
-            <img src={fullpageCocktail} alt="SOMA cocktail experience" className="w-full h-full object-cover" />
+          {/* Image - fully fills right column */}
+          <div className="relative min-h-[420px] md:min-h-0">
+            <img src={fullpageCocktail} alt="SOMA cocktail experience" className="absolute inset-0 w-full h-full object-cover" />
           </div>
         </div>
       </div>
