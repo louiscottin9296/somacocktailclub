@@ -7,11 +7,11 @@ import event6 from "@/assets/event-6.jpg";
 
 const events = [
   { image: event1, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-  { image: event2, title: "Cocktail Menu Design", subtitle: "Signature Drinks" },
+  { image: event2, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
   { image: event3, title: "Rooftop Startup Party", subtitle: "Mobile Bar" },
   { image: event4, title: "Private Indoor Party", subtitle: "White Tablecloth" },
-  { image: event5, title: "200-Person Wedding", subtitle: "Mobile Bar" },
-  { image: event6, title: "Team Building Workshop", subtitle: "Cocktail Workshop" },
+  { image: event5, title: "Team Building Event", subtitle: "Workshop Stations" },
+  { image: event6, title: "200-Person Wedding", subtitle: "Table Service + Bar" },
 ];
 
 const Events = () => {
@@ -21,9 +21,7 @@ const Events = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           Our Portfolio
         </p>
-        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">
-          Recent Events
-        </h2>
+        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">Recent Events</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {events.map((event, index) => (
