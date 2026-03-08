@@ -1,5 +1,5 @@
 import cocktailsBar from "@/assets/cocktails-bar.jpg";
-import event2 from "@/assets/event-2.jpg";
+import rooftopBar from "@/assets/rooftop-bar.jpg";
 import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
@@ -7,7 +7,7 @@ import event6 from "@/assets/event-6.jpg";
 
 const events = [
   { image: cocktailsBar, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-  { image: event2, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
+  { image: rooftopBar, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
   { image: event3, title: "Rooftop Startup Party", subtitle: "Mobile Bar" },
   { image: event4, title: "Private Indoor Party", subtitle: "White Tablecloth" },
   { image: event6, title: "200-Person Wedding", subtitle: "Table Service + Bar" },
