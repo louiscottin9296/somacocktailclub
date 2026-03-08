@@ -1,4 +1,4 @@
-import staffingNew from "@/assets/staffing-new.jpg";
+import event1 from "@/assets/event-1.jpg";
 import staffingHero from "@/assets/staffing-hero.jpg";
 import cocktail4 from "@/assets/cocktail-4.jpg";
 import cocktail5 from "@/assets/cocktail-5.jpg";
