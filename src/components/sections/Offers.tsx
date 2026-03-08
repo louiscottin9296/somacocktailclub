@@ -23,7 +23,7 @@ const offers = [
     title: "Staffing & Execution",
     description:
       "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal speed-to-quality ratio at every stage of production.",
-    image: staffingNew,
+    image: event1,
   },
   {
     number: "04",
