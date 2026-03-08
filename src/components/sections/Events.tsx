@@ -7,7 +7,7 @@ import event6 from "@/assets/event-6.jpg";
 
 const events = [
   { image: cocktailsBar, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-  { image: event2, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
+  { image: rooftopBar, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
   { image: event3, title: "Rooftop Startup Party", subtitle: "Mobile Bar" },
   { image: event4, title: "Private Indoor Party", subtitle: "White Tablecloth" },
   { image: event6, title: "200-Person Wedding", subtitle: "Table Service + Bar" },
