@@ -16,12 +16,6 @@ const Footer = () => {
           </p>
           <div className="flex flex-col items-center gap-3 mb-10">
             <a
-              href="#offers"
-              className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
-            >
-              Our Offers
-            </a>
-            <a
               href="mailto:hello@soma-cc.com"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
