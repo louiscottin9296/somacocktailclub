@@ -1,5 +1,5 @@
 import cocktailsBar from "@/assets/cocktails-bar.jpg";
-import event2 from "@/assets/event-2.jpg";
+import rooftopBar from "@/assets/rooftop-bar.jpg";
 import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
