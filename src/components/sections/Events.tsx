@@ -10,8 +10,8 @@ const events = [
   { image: event2, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
   { image: event3, title: "Rooftop Startup Party", subtitle: "Mobile Bar" },
   { image: event4, title: "Private Indoor Party", subtitle: "White Tablecloth" },
-  { image: workshopSetup, title: "Team Building Event", subtitle: "Workshop Stations" },
   { image: event6, title: "200-Person Wedding", subtitle: "Table Service + Bar" },
+  { image: workshopSetup, title: "Team Building Event", subtitle: "Workshop Stations" },
 ];
 
 const Events = () => {
