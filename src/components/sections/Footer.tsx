@@ -1,4 +1,4 @@
-import somaLogo from "@/assets/soma-logo.png";
+import thtLogo from "@/assets/tht-logo.png";
 
 const Footer = () => {
   return (
