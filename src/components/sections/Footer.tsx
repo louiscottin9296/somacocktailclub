@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
             Elevating your moments of togetherness.
           </p>
-          <div className="flex gap-8 mb-10">
+          <div className="flex flex-col items-center gap-3 mb-10">
             <a
               href="#offers"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
@@ -22,10 +22,24 @@ const Footer = () => {
               Our Offers
             </a>
             <a
-              href="#"
+              href="mailto:hello@soma-cc.com"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
-              Contact
+              hello@soma-cc.com
+            </a>
+            <a
+              href="https://www.instagram.com/somacocktailclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="tel:+33772352185"
+              className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
+            >
+              +33 7 72 35 21 85
             </a>
           </div>
           <div className="border-t border-primary-foreground/10 pt-8 w-full">
