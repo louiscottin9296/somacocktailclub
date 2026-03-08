@@ -6,10 +6,7 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8">
-            <p className="font-serif text-3xl text-primary-foreground tracking-wider">SOMA</p>
-            <p className="text-[10px] tracking-[0.35em] uppercase text-primary-foreground/50 font-sans mt-1">
-              Cocktail Club
-            </p>
+            <img src={thtLogo} alt="SOMA Cocktail Club" className="w-36 md:w-48 mx-auto opacity-80" />
           </div>
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
             Elevating your moments of togetherness.
