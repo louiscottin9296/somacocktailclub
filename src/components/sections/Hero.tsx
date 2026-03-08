@@ -36,11 +36,6 @@ const Hero = () => {
         </a>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-        <div className="w-px h-16 bg-primary-foreground/40 mx-auto mb-2" />
-        <span className="text-primary-foreground/50 text-[10px] tracking-[0.3em] uppercase">Scroll</span>
-      </div>
     </section>);
 
 };
