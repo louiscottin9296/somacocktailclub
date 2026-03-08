@@ -7,7 +7,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-16 md:gap-12 items-stretch">
           {/* Text */}
           <div>
-            <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">Our Story</p>
+            <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">SOMA's Story</p>
             <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-8 leading-tight">Our Values</h2>
             <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
               Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in
