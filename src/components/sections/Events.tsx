@@ -2,7 +2,7 @@ import event1 from "@/assets/event-1.jpg";
 import event2 from "@/assets/event-2.jpg";
 import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
-import event5 from "@/assets/event-5.jpg";
+import workshopSetup from "@/assets/workshop-setup.jpg";
 import event6 from "@/assets/event-6.jpg";
 
 const events = [
