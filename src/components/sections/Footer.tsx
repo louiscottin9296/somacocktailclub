@@ -12,13 +12,19 @@ const Footer = () => {
             </p>
           </div>
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
-            Elevating your moments of togetherness and celebration.
+            Elevating your moments of togetherness.
           </p>
           <div className="flex gap-8 mb-10">
-            <a href="#offers" className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors">
+            <a
+              href="#offers"
+              className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
+            >
               Our Offers
             </a>
-            <a href="#" className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors">
+            <a
+              href="#"
+              className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
+            >
               Contact
             </a>
           </div>
