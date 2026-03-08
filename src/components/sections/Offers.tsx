@@ -54,7 +54,7 @@ const Offers = () => {
                 />
               </div>
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent justify-end p-8 flex flex-col px-[32px]">
+              <div className="absolute inset-0 bg-gradient-to-t from-foreground/80 via-foreground/20 to-transparent justify-end p-8 flex flex-col px-5">
                 <span className="font-serif text-4xl text-accent/60 mb-1">{offer.number}</span>
                 <h3 className="font-serif italic text-2xl text-primary-foreground mb-3">{offer.title}</h3>
                 <p className="text-primary-foreground/70 text-sm font-sans leading-relaxed max-w-sm">
