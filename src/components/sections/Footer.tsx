@@ -24,7 +24,9 @@ const Footer = () => {
               hello@soma-cc.com
             </a>
             <a
-              href="tel:+33772352185"
+              href="https://wa.me/33772352185"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
               +33 7 72 35 21 85
