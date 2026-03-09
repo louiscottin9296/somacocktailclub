@@ -1,28 +1,24 @@
 import fullpageCocktail from "@/assets/fullpage-cocktail.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
 const About = () => {
+  const { language } = useLanguage();
+  const text = t(language).about;
+
   return (
     <>
       <section className="py-16 md:py-24 bg-card">
         <div className="container max-w-3xl mx-auto px-6 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
-            SOMA's Story
+            {text.label}
           </p>
           <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-8 leading-tight">
-            Our Values
+            {text.title}
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
-            Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in
-            crafting balanced, high-quality drinks and delivering a seamless bar catering experience.
-          </p>
-          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">
-            Our team consists of dedicated cocktail enthusiasts who bring expertise, creativity, and a commitment to
-            excellence that is guaranteed to elevate any occasion.
-          </p>
-          <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">
-            Sharing is at the heart of what we do: we always listen to your vision and thrive to deliver a fully
-            personalized & unique experience for you and your guests.
-          </p>
+          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p1}</p>
+          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p2}</p>
+          <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">{text.p3}</p>
         </div>
       </section>
 

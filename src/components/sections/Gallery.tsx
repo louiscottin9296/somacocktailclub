@@ -7,10 +7,11 @@ import cocktail5 from "@/assets/cocktail-5.jpg";
 import cocktail6 from "@/assets/cocktail-6.jpg";
 import cocktail7 from "@/assets/cocktail-7.jpg";
 import cocktail8 from "@/assets/cocktail-8.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
 const cocktails = [cocktail1, cocktail2, cocktail3, cocktail4, cocktail5, cocktail6, cocktail7, cocktail8];
 
-// Position configs for each slot: [left%, width%, opacity, z-index, scale]
 const positions: Record<string, { left: string; width: string; opacity: number; zIndex: number; scale: number }> = {
   "-2": { left: "0%", width: "13%", opacity: 0.3, zIndex: 10, scale: 0.8 },
   "-1": { left: "14%", width: "17%", opacity: 0.6, zIndex: 20, scale: 0.85 },
@@ -21,10 +22,11 @@ const positions: Record<string, { left: string; width: string; opacity: number; 
 
 const Gallery = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { language } = useLanguage();
+  const text = t(language).gallery;
 
   const getOffset = useCallback((i: number) => {
     let diff = i - activeIndex;
-    // Wrap around for circular carousel
     if (diff > cocktails.length / 2) diff -= cocktails.length;
     if (diff < -cocktails.length / 2) diff += cocktails.length;
     return diff;
@@ -34,17 +36,12 @@ const Gallery = () => {
   const goNext = () => setActiveIndex((prev) => (prev + 1) % cocktails.length);
   const goPrev = () => setActiveIndex((prev) => (prev - 1 + cocktails.length) % cocktails.length);
 
-  // Swipe gesture support
   const touchStartX = useRef<number | null>(null);
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
+  const handleTouchStart = (e: React.TouchEvent) => { touchStartX.current = e.touches[0].clientX; };
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (touchStartX.current === null) return;
     const diff = touchStartX.current - e.changedTouches[0].clientX;
-    if (Math.abs(diff) > 50) {
-      diff > 0 ? goNext() : goPrev();
-    }
+    if (Math.abs(diff) > 50) { diff > 0 ? goNext() : goPrev(); }
     touchStartX.current = null;
   };
 
@@ -52,10 +49,10 @@ const Gallery = () => {
     <section className="py-24 md:py-32 bg-card overflow-hidden">
       <div className="container max-w-6xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
-          Our Creations
+          {text.label}
         </p>
         <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">
-          Signature Cocktails
+          {text.title}
         </h2>
 
         <div className="relative h-[360px] md:h-[500px] touch-pan-y" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
@@ -83,17 +80,12 @@ const Gallery = () => {
                   pointerEvents: isVisible ? "auto" : "none",
                 }}
               >
-                <img
-                  src={src}
-                  alt={`SOMA signature cocktail ${i + 1}`}
-                  className="w-full h-full object-cover"
-                />
+                <img src={src} alt={`SOMA signature cocktail ${i + 1}`} className="w-full h-full object-cover" />
               </button>
             );
           })}
         </div>
 
-        {/* Dots */}
         <div className="flex justify-center gap-2 mt-8">
           {cocktails.map((_, i) => (
             <button

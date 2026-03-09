@@ -1,6 +1,11 @@
 import thtLogo from "@/assets/tht-logo.png";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const text = t(language).footer;
+
   return (
     <footer className="bg-foreground py-16">
       <div className="container max-w-6xl mx-auto px-6">
@@ -9,7 +14,7 @@ const Footer = () => {
             <img src={thtLogo} alt="SOMA Cocktail Club" className="w-36 md:w-48 mx-auto opacity-80" />
           </div>
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
-            Elevating your moments of togetherness.
+            {text.tagline}
           </p>
           <div className="flex flex-col items-center gap-3 mb-10">
             <a
