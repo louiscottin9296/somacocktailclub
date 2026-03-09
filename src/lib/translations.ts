@@ -54,7 +54,7 @@ export const translations = {
           description: "We take care of delivery and set up your personalized bar ahead of your event.",
         },
         {
-          title: "Celebrate",
+          title: "Cheers!",
           description: "Our expert bartenders shake up exceptional cocktails for you and your guests.",
         },
       ],
@@ -139,7 +139,7 @@ export const translations = {
           description: "Wir kümmern uns um die Lieferung und richten Ihre personalisierte Bar vor Ihrem Event ein.",
         },
         {
-          title: "Feiern",
+          title: "Prost!",
           description: "Unsere erfahrenen Barkeeper mixen außergewöhnliche Cocktails für Sie und Ihre Gäste.",
         },
       ],
