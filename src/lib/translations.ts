@@ -58,8 +58,8 @@ export const translations = {
           description: "Our expert bartenders shake up exceptional cocktails for you and your guests.",
         },
       ],
-      successTitle: "Your event is a success.",
-      successSubtitle: "You have an amazing evening and enthusiastically recommend us to your network.",
+      successTitle: "Your event is a success",
+      successSubtitle: "Share your experience with your network!",
     },
     gallery: {
       label: "Our Creations",
