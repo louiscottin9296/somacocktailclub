@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     hero: {
-      tagline: "The Art of Good Living",
+      tagline: "Elevating your moments of togetherness",
       subtitle: "Connection · Craft · Mixology",
       cta: "Discover Our Offer",
     },
