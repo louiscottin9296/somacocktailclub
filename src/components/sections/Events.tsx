@@ -4,31 +4,29 @@ import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
 import event6 from "@/assets/event-6.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
-const events = [
-  { image: cocktailsBar, title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-  { image: rooftopBar, title: "Rooftop Corporate Party", subtitle: "Mobile Bar" },
-  { image: event3, title: "Fashion Show After-party", subtitle: "Mobile Bar" },
-  { image: event4, title: "Private Indoor Event", subtitle: "White Tablecloth" },
-  { image: event6, title: "200-Person Wedding", subtitle: "Table Service + Bar" },
-  { image: workshopSetup, title: "Team Building Event", subtitle: "Workshop Stations" },
-];
+const images = [cocktailsBar, rooftopBar, event3, event4, event6, workshopSetup];
 
 const Events = () => {
+  const { language } = useLanguage();
+  const text = t(language).events;
+
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
-          Our Portfolio
+          {text.label}
         </p>
-        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">Recent Events</h2>
+        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">{text.title}</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {events.map((event, index) => (
+          {text.items.map((event, index) => (
             <div key={index} className="group relative overflow-hidden">
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={event.image}
+                  src={images[index]}
                   alt={`${event.title} - SOMA Cocktail Club`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
