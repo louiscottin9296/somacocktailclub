@@ -7,7 +7,7 @@ export const translations = {
     },
     about: {
       label: "SOMA's Story",
-      title: "Our Values",
+      title: "About us",
       p1: "Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in crafting balanced, high-quality drinks and delivering a seamless bar catering experience.",
       p2: "Our team consists of dedicated cocktail enthusiasts who bring expertise, creativity, and a commitment to excellence that is guaranteed to elevate any occasion.",
       p3: "Sharing is at the heart of what we do: we always listen to your vision and thrive to deliver a fully personalized & unique experience for you and your guests.",
