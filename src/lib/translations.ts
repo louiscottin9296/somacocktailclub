@@ -58,7 +58,7 @@ export const translations = {
           description: "Our expert bartenders shake up exceptional cocktails for you and your guests.",
         },
       ],
-      successTitle: "Your event is a success",
+      successTitle: "Your event is a success.",
       successSubtitle: "Share your experience with your network!",
     },
     gallery: {
@@ -144,7 +144,7 @@ export const translations = {
         },
       ],
       successTitle: "Ihr Event ist ein Erfolg.",
-      successSubtitle: "Sie haben einen wunderbaren Abend und empfehlen uns begeistert in Ihrem Netzwerk weiter.",
+      successSubtitle: "Teilen Sie Ihre Erfahrungen mit Ihrem Netzwerk!",
     },
     gallery: {
       label: "Unsere Kreationen",
