@@ -1,8 +1,8 @@
 export const translations = {
   en: {
     hero: {
-      tagline: "Elevating your moments of togetherness",
-      subtitle: "Connection · Craft · Mixology",
+      tagline: "Elevating your moments of togetherness.",
+      subtitle: "Events · Connection · Mixology",
       cta: "Discover Our Offer",
     },
     about: {
@@ -18,19 +18,23 @@ export const translations = {
       items: [
         {
           title: "Event Planning",
-          description: "A successful event begins with a quality bar. We bring character and an extra dimension to your evening. We take the time to design a tailor-made experience that meets your expectations and aligns perfectly with your vision.",
+          description:
+            "A successful event begins with a quality bar. We bring character and an extra dimension to your evening. We take the time to design a tailor-made experience that meets your expectations and aligns perfectly with your vision.",
         },
         {
           title: "Signature Cocktail Menus",
-          description: "We offer our creative advice to help you design a high-end & custom menu. By suggesting drinks that complement the event's concept, brand, and creative direction, we make sure each event is unique & memorable.",
+          description:
+            "We offer our creative advice to help you design a high-end & custom menu. By suggesting drinks that complement the event's concept, brand, and creative direction, we make sure each event is unique & memorable.",
         },
         {
           title: "Staffing & Execution",
-          description: "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal speed-to-quality ratio at every stage of production.",
+          description:
+            "We hire from our pool of expert bartenders and execute the event for you, or train your existing staff and share all our best tips. We consider the preparation time of each cocktail, keeping the ideal speed-to-quality ratio at every stage of production.",
         },
         {
           title: "Cocktail Workshops",
-          description: "We introduce you to the world of mixology and the history of cocktails — so that you can start crafting top-tier cocktails at home. We also propose non-alcoholic workshops, where you will discover equally exciting home-made alternatives.",
+          description:
+            "We introduce you to the world of mixology and the history of cocktails — so that you can start crafting top-tier cocktails at home. We also propose non-alcoholic workshops, where you will discover equally exciting home-made alternatives.",
         },
       ],
     },
@@ -40,9 +44,19 @@ export const translations = {
       subtitle: "As simple as it gets: an unforgettable event, in 4 easy steps.",
       steps: [
         { title: "Discuss", description: "We discuss your needs and create a tailor-made offer." },
-        { title: "Integrate", description: "We integrate seamlessly and work hand in hand with your other service providers, at any stage of your event." },
-        { title: "Set Up", description: "We take care of delivery and set up your personalized bar ahead of your event." },
-        { title: "Celebrate", description: "Our expert bartenders shake up exceptional cocktails for you and your guests." },
+        {
+          title: "Integrate",
+          description:
+            "We integrate seamlessly and work hand in hand with your other service providers, at any stage of your event.",
+        },
+        {
+          title: "Set Up",
+          description: "We take care of delivery and set up your personalized bar ahead of your event.",
+        },
+        {
+          title: "Celebrate",
+          description: "Our expert bartenders shake up exceptional cocktails for you and your guests.",
+        },
       ],
       successTitle: "Your event is a success.",
       successSubtitle: "You have an amazing evening and enthusiastically recommend us to your network.",
@@ -69,8 +83,8 @@ export const translations = {
   },
   de: {
     hero: {
-      tagline: "Die Kunst des guten Lebens",
-      subtitle: "Verbindung · Handwerk · Mixologie",
+      tagline: "Gemeinsame Momente erheben.",
+      subtitle: "Veranstaltungen · Verbindung · Mixologie",
       cta: "Unser Angebot entdecken",
     },
     about: {
@@ -86,19 +100,23 @@ export const translations = {
       items: [
         {
           title: "Eventplanung",
-          description: "Ein gelungenes Event beginnt mit einer hochwertigen Bar. Wir verleihen Ihrem Abend Charakter und eine besondere Dimension. Wir nehmen uns die Zeit, ein maßgeschneidertes Erlebnis zu gestalten, das Ihren Erwartungen entspricht und perfekt zu Ihrer Vision passt.",
+          description:
+            "Ein gelungenes Event beginnt mit einer hochwertigen Bar. Wir verleihen Ihrem Abend Charakter und eine besondere Dimension. Wir nehmen uns die Zeit, ein maßgeschneidertes Erlebnis zu gestalten, das Ihren Erwartungen entspricht und perfekt zu Ihrer Vision passt.",
         },
         {
           title: "Signature Cocktail-Menüs",
-          description: "Wir bieten unsere kreative Beratung, um Ihnen bei der Gestaltung eines hochwertigen und individuellen Menüs zu helfen. Durch Getränkevorschläge, die zum Konzept, zur Marke und zur kreativen Ausrichtung des Events passen, sorgen wir dafür, dass jedes Event einzigartig und unvergesslich wird.",
+          description:
+            "Wir bieten unsere kreative Beratung, um Ihnen bei der Gestaltung eines hochwertigen und individuellen Menüs zu helfen. Durch Getränkevorschläge, die zum Konzept, zur Marke und zur kreativen Ausrichtung des Events passen, sorgen wir dafür, dass jedes Event einzigartig und unvergesslich wird.",
         },
         {
           title: "Personal & Durchführung",
-          description: "Wir stellen aus unserem Pool erfahrener Barkeeper ein und führen das Event für Sie durch, oder schulen Ihr bestehendes Personal und teilen unsere besten Tipps. Wir berücksichtigen die Zubereitungszeit jedes Cocktails und halten das ideale Verhältnis von Geschwindigkeit und Qualität in jeder Produktionsphase.",
+          description:
+            "Wir stellen aus unserem Pool erfahrener Barkeeper ein und führen das Event für Sie durch, oder schulen Ihr bestehendes Personal und teilen unsere besten Tipps. Wir berücksichtigen die Zubereitungszeit jedes Cocktails und halten das ideale Verhältnis von Geschwindigkeit und Qualität in jeder Produktionsphase.",
         },
         {
           title: "Cocktail-Workshops",
-          description: "Wir führen Sie in die Welt der Mixologie und die Geschichte der Cocktails ein — damit Sie zu Hause erstklassige Cocktails zubereiten können. Wir bieten auch alkoholfreie Workshops an, bei denen Sie ebenso spannende hausgemachte Alternativen entdecken.",
+          description:
+            "Wir führen Sie in die Welt der Mixologie und die Geschichte der Cocktails ein — damit Sie zu Hause erstklassige Cocktails zubereiten können. Wir bieten auch alkoholfreie Workshops an, bei denen Sie ebenso spannende hausgemachte Alternativen entdecken.",
         },
       ],
     },
@@ -107,10 +125,23 @@ export const translations = {
       title: "Wie funktioniert es?",
       subtitle: "So einfach wie möglich: ein unvergessliches Event in 4 einfachen Schritten.",
       steps: [
-        { title: "Besprechen", description: "Wir besprechen Ihre Bedürfnisse und erstellen ein maßgeschneidertes Angebot." },
-        { title: "Integrieren", description: "Wir integrieren uns nahtlos und arbeiten Hand in Hand mit Ihren anderen Dienstleistern, in jeder Phase Ihres Events." },
-        { title: "Aufbauen", description: "Wir kümmern uns um die Lieferung und richten Ihre personalisierte Bar vor Ihrem Event ein." },
-        { title: "Feiern", description: "Unsere erfahrenen Barkeeper mixen außergewöhnliche Cocktails für Sie und Ihre Gäste." },
+        {
+          title: "Besprechen",
+          description: "Wir besprechen Ihre Bedürfnisse und erstellen ein maßgeschneidertes Angebot.",
+        },
+        {
+          title: "Integrieren",
+          description:
+            "Wir integrieren uns nahtlos und arbeiten Hand in Hand mit Ihren anderen Dienstleistern, in jeder Phase Ihres Events.",
+        },
+        {
+          title: "Aufbauen",
+          description: "Wir kümmern uns um die Lieferung und richten Ihre personalisierte Bar vor Ihrem Event ein.",
+        },
+        {
+          title: "Feiern",
+          description: "Unsere erfahrenen Barkeeper mixen außergewöhnliche Cocktails für Sie und Ihre Gäste.",
+        },
       ],
       successTitle: "Ihr Event ist ein Erfolg.",
       successSubtitle: "Sie haben einen wunderbaren Abend und empfehlen uns begeistert in Ihrem Netzwerk weiter.",
@@ -132,7 +163,7 @@ export const translations = {
       ],
     },
     footer: {
-      tagline: "Wir veredeln Ihre gemeinsamen Momente.",
+      tagline: "Gemeinsame Momente erheben.",
     },
   },
 } as const;
