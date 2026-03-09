@@ -6,10 +6,12 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import Gallery from "@/components/sections/Gallery";
 import Events from "@/components/sections/Events";
 import Footer from "@/components/sections/Footer";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Index = () => {
   return (
     <main>
+      <LanguageSwitcher />
       <Hero />
       <About />
       
