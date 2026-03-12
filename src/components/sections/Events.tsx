@@ -48,7 +48,7 @@ const Events = () => {
           <h3 className="font-serif italic text-3xl md:text-5xl text-foreground mb-10">{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap">
             <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain brightness-0" />
-            <img src={salomonLogo} alt="Salomon" className="h-10 md:h-12 object-contain brightness-0" />
+            <img src={salomonLogo} alt="Salomon" className="h-16 md:h-20 object-contain brightness-0" />
             <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
           </div>
         </div>
