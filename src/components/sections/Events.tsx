@@ -44,7 +44,7 @@ const Events = () => {
           ))}
         </div>
 
-        <div className="mt-16 text-center">
+        <div className="mt-24 md:mt-32 text-center">
           <h3 className="font-serif italic text-3xl md:text-5xl text-foreground mb-10">{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap">
             <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain brightness-0" />
