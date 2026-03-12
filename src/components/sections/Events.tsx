@@ -58,12 +58,12 @@ const Events = () => {
             <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
           </div>
           <div className="flex items-center justify-center gap-6 md:gap-10 flex-wrap mt-6 max-w-4xl mx-auto">
-            <img src={dijoLogo} alt="Dijo" className="h-24 md:h-28 object-contain brightness-0" />
-            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain brightness-0" />
-            <img src={hyperlineLogo} alt="Hyperline" className="h-4 md:h-5 object-contain brightness-0" />
+            <img src={dijoLogo} alt="Dijo" className="h-8 md:h-10 object-contain brightness-0" />
+            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-8 md:h-10 object-contain brightness-0" />
+            <img src={hyperlineLogo} alt="Hyperline" className="h-8 md:h-10 object-contain brightness-0" />
             <img src={momentLogo} alt="Moment" className="h-8 md:h-10 object-contain brightness-0" />
-            <img src={pigmentLogo} alt="Pigment" className="h-4 md:h-5 object-contain brightness-0" />
-            <img src={newLogo} alt="New Partner" className="h-12 md:h-16 object-contain brightness-0" />
+            <img src={pigmentLogo} alt="Pigment" className="h-8 md:h-10 object-contain brightness-0" />
+            <img src={newLogo} alt="New Partner" className="h-8 md:h-10 object-contain brightness-0" />
           </div>
         </div>
       </div>
