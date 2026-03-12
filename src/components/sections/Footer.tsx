@@ -22,7 +22,7 @@ const Footer = () => {
             {text.faqTitle}
           </h2>
           <Accordion type="single" collapsible className="max-w-2xl mx-auto">
-            {faqItems.map((item, index) => (
+            {text.faq.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`faq-${index}`}

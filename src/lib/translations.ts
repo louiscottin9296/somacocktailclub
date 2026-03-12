@@ -174,6 +174,14 @@ export const translations = {
     },
     footer: {
       tagline: "Gemeinsame Momente erheben.",
+      faqTitle: "Häufig gestellte Fragen",
+      faq: [
+        { question: "FAQ Frage 1", answer: "Textantwort 1" },
+        { question: "FAQ Frage 2", answer: "Textantwort 2" },
+        { question: "FAQ Frage 3", answer: "Textantwort 3" },
+        { question: "FAQ Frage 4", answer: "Textantwort 4" },
+        { question: "FAQ Frage 5", answer: "Textantwort 5" },
+      ],
     },
   },
 } as const;
