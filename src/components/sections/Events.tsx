@@ -7,6 +7,11 @@ import event6 from "@/assets/event-6.jpg";
 import patchworkLogo from "@/assets/patchwork-logo.png";
 import salomonLogo from "@/assets/salomon-logo.png";
 import toryburchLogo from "@/assets/toryburch-logo.webp";
+import dijoLogo from "@/assets/dijo-logo.png";
+import atelierDeLucaLogo from "@/assets/atelier-de-luca-logo.png";
+import hyperlineLogo from "@/assets/hyperline-logo.svg";
+import momentLogo from "@/assets/moment-logo.png";
+import pigmentLogo from "@/assets/pigment-logo.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 
