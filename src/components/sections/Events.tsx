@@ -59,17 +59,17 @@ const Events = () => {
           </p>
           <h3 className="font-serif italic text-3xl md:text-5xl mb-6" style={{ color: '#525546' }}>{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap pl-4 md:pl-8">
-            <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain mr-6 md:mr-10" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={toryburchLogo} alt="Tory Burch" className="h-14 md:h-[68px] object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain ml-4 md:ml-8" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <div className="h-5 md:h-6 w-24 md:w-28 mr-6 md:mr-10" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${patchworkLogo})`, maskImage: `url(${patchworkLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-14 md:h-[68px] w-28 md:w-32" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${toryburchLogo})`, maskImage: `url(${toryburchLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-32 md:h-40 w-32 md:w-40 ml-4 md:ml-8" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${salomonLogo})`, maskImage: `url(${salomonLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
           </div>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap -mt-8">
-            <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={momentLogo} alt="Moment" className="h-12 md:h-16 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={pigmentLogo} alt="Pigment" className="h-5 md:h-6 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
-            <img src={newLogo} alt="New Partner" className="h-4 md:h-5 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <div className="h-20 md:h-28 w-24 md:w-32" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${dijoLogo})`, maskImage: `url(${dijoLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-6 md:h-8 w-24 md:w-28" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${atelierDeLucaLogo})`, maskImage: `url(${atelierDeLucaLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-6 md:h-8 w-24 md:w-28" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${hyperlineLogo})`, maskImage: `url(${hyperlineLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-12 md:h-16 w-24 md:w-28" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${momentLogo})`, maskImage: `url(${momentLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-5 md:h-6 w-20 md:w-24" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${pigmentLogo})`, maskImage: `url(${pigmentLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
+            <div className="h-4 md:h-5 w-16 md:w-20" style={{ backgroundColor: '#525546', WebkitMaskImage: `url(${newLogo})`, maskImage: `url(${newLogo})`, WebkitMaskSize: 'contain', maskSize: 'contain', WebkitMaskRepeat: 'no-repeat', maskRepeat: 'no-repeat', WebkitMaskPosition: 'center', maskPosition: 'center' }} />
           </div>
         </div>
       </div>
