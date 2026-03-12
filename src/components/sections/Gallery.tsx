@@ -46,7 +46,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="pt-24 md:pt-32 pb-8 md:pb-12 overflow-hidden" style={{ backgroundColor: '#f7f2ec' }}>
+    <section className="pt-24 md:pt-32 pb-12 md:pb-16 overflow-hidden" style={{ backgroundColor: '#f7f2ec' }}>
       <div className="container max-w-6xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           {text.label}
