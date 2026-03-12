@@ -88,7 +88,9 @@ export const translations = {
         {
           question: "Is your service limited to cocktails?",
           answer:
-            "Not at all! In addition to our signature cocktails, we offer a full range of beverages, including wine, champagne, beer, mocktails, and non-alcoholic options to suit every guest's preference. We also offer food catering through our trusted partners, so you only need to coordinate with us for a unified & seamless experience.",
+            "Not at all! In addition to our signature cocktails, we offer a full range of beverages, including wine, champagne, beer, mocktails, and non-alcoholic options to suit every guest's preference." 
+            
+            "We also offer food catering through our trusted partners, so you only need to coordinate with us for a unified & seamless experience.",
         },
         {
           question: "What kinds of events do you cater?",
