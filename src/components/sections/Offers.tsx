@@ -18,7 +18,7 @@ const Offers = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           {text.label}
         </p>
-        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">{text.title}</h2>
+        <h2 className="font-serif italic text-3xl md:text-5xl mb-20 text-center" style={{ color: '#525546' }}>{text.title}</h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {text.items.map((offer, i) => (
