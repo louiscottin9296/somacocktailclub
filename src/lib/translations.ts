@@ -74,7 +74,7 @@ export const translations = {
         { title: "Fashion Show After-party", subtitle: "Mobile Bar" },
         { title: "Coworking Space Opening", subtitle: "Mobile Bar" },
         { title: "Wine Bar", subtitle: "White Tablecloth" },
-        { title: "Coordination with ", subtitle: "Mobile Bar" },
+        { title: "Food catering", subtitle: "Coordination with our partners" },
         { title: "Private Indoor Event", subtitle: "White Tablecloth" },
         { title: "200-Person Wedding", subtitle: "Table Service + Bar" },
         { title: "Team Building Event", subtitle: "Workshop Stations" },
