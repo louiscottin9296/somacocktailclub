@@ -13,7 +13,7 @@ export const translations = {
       p3: "Sharing is at the heart of what we do: we always listen to your vision and thrive to deliver a fully personalized & unique experience for you and your guests.",
     },
     offers: {
-      label: "What We Do",
+      label: "What to expect from us",
       title: "Our Offers",
       items: [
         {
@@ -117,23 +117,23 @@ export const translations = {
     hero: {
       tagline: "Gemeinsame Momente erheben.",
       subtitle: "Veranstaltungen · Verbindung · Mixologie",
-      cta: "Unser Angebot entdecken",
+      cta: "Entdecken Sie unser Angebot",
     },
     about: {
       label: "SOMA's Geschichte",
       title: "Unsere Werte",
-      p1: "Unser Projekt basiert auf der Leidenschaft für außergewöhnliche Cocktails und unvergessliche Erlebnisse. Wir sind spezialisiert auf die Kreation ausgewogener, hochwertiger Drinks und ein nahtloses Bar-Catering-Erlebnis.",
-      p2: "Unser Team besteht aus engagierten Cocktail-Enthusiasten, die Expertise, Kreativität und ein Streben nach Exzellenz mitbringen, das jede Veranstaltung auf ein neues Niveau hebt.",
+      p1: "SOMA Cocktail Club entstand aus der Leidenschaft für außergewöhnliche Cocktails und unvergessliche Erlebnisse. Wir sind nicht nur auf die Kreation ausgewogener, hochwertiger Drinks spezialisiert, sondern sorgen auch für ein reibungsloses Bar-Catering-Erlebnis.",
+      p2: "Unser Team besteht aus engagierten Cocktail-Enthusiasten, die Expertise, Kreativität und ein Streben nach Exzellenz mitbringen, sodass jede Veranstaltung auf ein neues Niveau gebracht wird.",
       p3: "Teilen steht im Mittelpunkt unserer Arbeit: Wir hören immer auf Ihre Vision und streben danach, ein vollständig personalisiertes und einzigartiges Erlebnis für Sie und Ihre Gäste zu schaffen.",
     },
     offers: {
-      label: "Was wir tun",
+      label: "Was Sie von uns erwarten können",
       title: "Unser Angebot",
       items: [
         {
           title: "Eventplanung",
           description:
-            "Ein gelungenes Event beginnt mit einer hochwertigen Bar. Wir verleihen Ihrem Abend Charakter und eine besondere Dimension. Wir nehmen uns die Zeit, ein maßgeschneidertes Erlebnis zu gestalten, das Ihren Erwartungen entspricht und perfekt zu Ihrer Vision passt.",
+            "Ein gelungenes Event beginnt mit einer hochwertigen Bar. Wir verleihen Ihrem Abend Charakter und eine besondere Note. Wir nehmen uns die Zeit, ein maßgeschneidertes Erlebnis zu gestalten, das Ihren Erwartungen entspricht und perfekt zu Ihrer Vision passt.",
         },
         {
           title: "Signature Cocktail-Menüs",
@@ -143,19 +143,19 @@ export const translations = {
         {
           title: "Personal & Durchführung",
           description:
-            "Wir stellen aus unserem Pool erfahrener Barkeeper ein und führen das Event für Sie durch, oder schulen Ihr bestehendes Personal und teilen unsere besten Tipps. Wir berücksichtigen die Zubereitungszeit jedes Cocktails und halten das ideale Verhältnis von Geschwindigkeit und Qualität in jeder Produktionsphase.",
+            "Wir stellen Ihnen unsere erfahrenen Barkeeper zur Verfügung und führen die Veranstaltung für Sie durch – oder schulen Ihr bestehendes Team mit unseren besten Tricks und Techniken. Wir berücksichtigen die Zubereitungszeit jedes Cocktails und halten das ideale Verhältnis von Geschwindigkeit und Qualität in jeder Produktionsphase.",
         },
         {
           title: "Cocktail-Workshops",
           description:
-            "Wir führen Sie in die Welt der Mixologie und die Geschichte der Cocktails ein — damit Sie zu Hause erstklassige Cocktails zubereiten können. Wir bieten auch alkoholfreie Workshops an, bei denen Sie ebenso spannende hausgemachte Alternativen entdecken.",
+            "Wir eröffnen Ihnen die Welt der Mixologie und die Geschichte der Cocktails — damit Sie auch zu Hause erstklassige Cocktails zubereiten können. Unsere Workshops bieten wir ebenfalls für alkoholfreien Genuss an, sodass Sie spannende und geschmackvolle Alternativen entdecken.",
         },
       ],
     },
     howItWorks: {
       label: "Einfach & Reibungslos",
       title: "Wie funktioniert es?",
-      subtitle: "So einfach wie möglich: ein unvergessliches Event in 4 einfachen Schritten.",
+      subtitle: "So einfach wie möglich: Ein unvergessliches Event in 4 einfachen Schritten.",
       steps: [
         {
           title: "Besprechen",
@@ -164,7 +164,7 @@ export const translations = {
         {
           title: "Integrieren",
           description:
-            "Wir integrieren uns nahtlos und arbeiten Hand in Hand mit Ihren anderen Dienstleistern, in jeder Phase Ihres Events.",
+            "Wir integrieren uns nahtlos und arbeiten Hand in Hand mit Ihren anderen Dienstleistern in jeder Phase Ihres Events.",
         },
         {
           title: "Aufbauen",
@@ -202,31 +202,11 @@ export const translations = {
       tagline: "Gemeinsame Momente erheben.",
       faqTitle: "Häufig gestellte Fragen",
       faq: [
-        {
-          question: "Ist euer Angebot auf Cocktails beschränkt?",
-          answer:
-            "Ganz und gar nicht! Neben unseren Signature-Cocktails bieten wir ein vollständiges Getränkeangebot, darunter Wein, Champagner, Bier, Mocktails und andere alkoholfreie Optionen für jeden Geschmack.\n\nWir bieten auch Food-Catering über unsere vertrauenswürdigen Partner an, sodass ihr alles nur mit uns koordinieren müsst — für ein einheitliches und reibungsloses Erlebnis.",
-        },
-        {
-          question: "Welche Art von Events betreut ihr?",
-          answer:
-            "Wir betreuen alle Arten von Events: Firmenveranstaltungen, Hochzeiten, private Feiern und vieles mehr. Egal welcher Anlass — wir passen unseren Service an eure Bedürfnisse an.",
-        },
-        {
-          question: "Welche Eventgrößen betreut ihr?",
-          answer:
-            "Wir betreuen Events jeder Größe, von Workshops mit nur 5 Gästen bis hin zu großen Feiern mit bis zu 500 Teilnehmern. Kein Event ist uns zu groß oder zu klein!",
-        },
-        {
-          question: "Wo seid ihr tätig?",
-          answer:
-            "Wir sind sowohl in Paris als auch in Berlin ansässig und bedienen Kunden in ganz Frankreich und Deutschland. Für Events anderswo in Europa sprechen wir gerne über die Möglichkeiten — kontaktiert uns einfach!",
-        },
-        {
-          question: "Wie können wir euch kontaktieren?",
-          answer:
-            "Wenn ihr Fragen, Ideen habt oder einfach plaudern wollt — wir sind für euch da! Meldet euch jederzeit per E-Mail, Telefon oder Instagram. Alle Kontaktdaten findet ihr direkt hier unten.",
-        },
+        { question: "FAQ Frage 1", answer: "Textantwort 1" },
+        { question: "FAQ Frage 2", answer: "Textantwort 2" },
+        { question: "FAQ Frage 3", answer: "Textantwort 3" },
+        { question: "FAQ Frage 4", answer: "Textantwort 4" },
+        { question: "FAQ Frage 5", answer: "Textantwort 5" },
       ],
     },
   },
