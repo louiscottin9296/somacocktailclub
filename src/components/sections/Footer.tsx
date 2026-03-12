@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="flex flex-col items-center text-center">
           <div className="mb-8">
             <div
-              className="w-36 md:w-48 h-16 md:h-20 mx-auto"
+              className="w-36 md:w-48 h-24 md:h-32 mx-auto"
               style={{
                 WebkitMaskImage: `url(${thtLogo})`,
                 maskImage: `url(${thtLogo})`,
