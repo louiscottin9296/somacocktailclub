@@ -7,7 +7,7 @@ const Footer = () => {
   const text = t(language).footer;
 
   return (
-    <footer className="py-16" style={{ backgroundColor: '#5B5E4B' }}>
+    <footer className="py-16" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8">
