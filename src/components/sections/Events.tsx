@@ -4,6 +4,9 @@ import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
 import event6 from "@/assets/event-6.jpg";
+import event7 from "@/assets/event-7.jpg";
+import event8 from "@/assets/event-8.jpg";
+import event9 from "@/assets/event-9.jpg";
 import patchworkLogo from "@/assets/patchwork-logo.png";
 import salomonLogo from "@/assets/salomon-logo.png";
 import toryburchLogo from "@/assets/toryburch-logo.webp";
@@ -16,7 +19,7 @@ import newLogo from "@/assets/Frame_1321316415.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 
-const images = [cocktailsBar, rooftopBar, event3, event4, event6, workshopSetup];
+const images = [cocktailsBar, rooftopBar, event3, event7, event8, event9, event4, event6, workshopSetup];
 
 const Events = () => {
   const { language } = useLanguage();
