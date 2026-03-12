@@ -111,7 +111,6 @@ export const translations = {
             "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below.",
         },
       ],
-      allRightsReserved: "All rights reserved.",
     },
   },
   de: {
@@ -191,8 +190,8 @@ export const translations = {
         { title: "Rooftop Firmenfeier", subtitle: "Mobile Bar" },
         { title: "Modenschau After-Party", subtitle: "Mobile Bar" },
         { title: "Eröffnung Coworking Space", subtitle: "Mobile Bar" },
-        { title: "Eröffnung Coworking Space", subtitle: "Mobile Bar" },
-        { title: "Eröffnung Coworking Space", subtitle: "Mobile Bar" },
+        { title: "Weinbar", subtitle: "Weiße Tischdecke" },
+        { title: "Food-catering", subtitle: "Koordination mit unseren Partnern" },
         { title: "Private Indoor-Veranstaltung", subtitle: "Weiße Tischdecke" },
         { title: "Hochzeit mit 200 Gästen", subtitle: "Tischservice + Bar" },
         { title: "Teambuilding-Event", subtitle: "Workshop-Stationen" },
@@ -229,7 +228,6 @@ export const translations = {
             "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Schreiben Sie uns jederzeit per E-Mail, rufen Sie uns an oder kontaktieren Sie uns über Instagram. Alle Kontaktdaten finden Sie direkt unten.",
         },
       ],
-      allRightsReserved: "Alle Rechte vorbehalten.",
     },
   },
 } as const;
