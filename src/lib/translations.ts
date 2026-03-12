@@ -200,13 +200,33 @@ export const translations = {
     },
     footer: {
       tagline: "Gemeinsame Momente erheben.",
-      faqTitle: "Häufig gestellte Fragen",
+      faqTitle: "FAQ — Häufig gestellte Fragen",
       faq: [
-        { question: "FAQ Frage 1", answer: "Textantwort 1" },
-        { question: "FAQ Frage 2", answer: "Textantwort 2" },
-        { question: "FAQ Frage 3", answer: "Textantwort 3" },
-        { question: "FAQ Frage 4", answer: "Textantwort 4" },
-        { question: "FAQ Frage 5", answer: "Textantwort 5" },
+        {
+          question: "Beschränkt sich Ihr Service auf Cocktails?",
+          answer:
+            "Keineswegs! Neben unseren Signature-Cocktails bieten wir ein vollständiges Getränkeangebot an – darunter Wein, Champagner, Bier, Mocktails und weitere alkoholfreie Optionen, ganz nach dem Geschmack Ihrer Gäste. Über unsere vertrauenswürdigen Partner bieten wir außerdem Food-Catering an, sodass Sie alles aus einer Hand erhalten – für ein reibungsloses und stressfreies Erlebnis.",
+        },
+        {
+          question: "Für welche Art von Veranstaltungen sind Sie zuständig?",
+          answer:
+            "Wir betreuen alle Arten von Events: Firmenveranstaltungen, Hochzeiten, Privatfeiern und vieles mehr. Ganz gleich, um welchen Anlass es sich handelt – wir passen unseren Service an Ihre Bedürfnisse an.",
+        },
+        {
+          question: "Für wie große Veranstaltungen sind Sie zuständig?",
+          answer:
+            "Wir betreuen Events jeder Größe – von Workshops mit nur 5 Gästen bis hin zu großen Feiern mit bis zu 500 Personen. Kein Event ist uns zu groß oder zu klein!",
+        },
+        {
+          question: "Wo sind Sie tätig?",
+          answer:
+            "Wir sind sowohl in Paris als auch in Berlin ansässig und betreuen Kunden in ganz Frankreich und Deutschland. Für Events an anderen Orten in Europa besprechen wir gerne die Möglichkeiten – sprechen Sie uns einfach an!",
+        },
+        {
+          question: "Wie können wir Sie kontaktieren?",
+          answer:
+            "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Schreiben Sie uns jederzeit per E-Mail, rufen Sie uns an oder kontaktieren Sie uns über Instagram. Alle Kontaktdaten finden Sie direkt unten.",
+        },
       ],
     },
   },
