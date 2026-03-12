@@ -4,6 +4,9 @@ import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
 import event6 from "@/assets/event-6.jpg";
+import patchworkLogo from "@/assets/patchwork-logo.png";
+import salomonLogo from "@/assets/salomon-logo.png";
+import toryburchLogo from "@/assets/toryburch-logo.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 
@@ -39,6 +42,15 @@ const Events = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-16 text-center">
+          <h3 className="font-serif italic text-2xl md:text-3xl text-foreground mb-10">{text.trustedBy}</h3>
+          <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap">
+            <img src={patchworkLogo} alt="Patchwork" className="h-6 md:h-8 object-contain brightness-0" />
+            <img src={salomonLogo} alt="Salomon" className="h-8 md:h-10 object-contain brightness-0" />
+            <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
+          </div>
         </div>
       </div>
     </section>
