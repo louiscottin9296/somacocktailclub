@@ -57,7 +57,7 @@ const Events = () => {
             <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain brightness-0" />
             <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
           </div>
-          <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap mt-0.5">
+          <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap">
             <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain brightness-0" />
             <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain brightness-0" />
             <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain brightness-0" />
