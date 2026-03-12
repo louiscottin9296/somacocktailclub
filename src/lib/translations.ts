@@ -76,6 +76,7 @@ export const translations = {
         { title: "200-Person Wedding", subtitle: "Table Service + Bar" },
         { title: "Team Building Event", subtitle: "Workshop Stations" },
       ],
+      trustedBy: "Trusted by",
     },
     footer: {
       tagline: "Elevating your moments of togetherness.",
