@@ -4,6 +4,9 @@ import event3 from "@/assets/event-3.jpg";
 import event4 from "@/assets/event-4.jpg";
 import workshopSetup from "@/assets/workshop-setup.jpg";
 import event6 from "@/assets/event-6.jpg";
+import patchworkLogo from "@/assets/patchwork-logo.png";
+import salomonLogo from "@/assets/salomon-logo.png";
+import toryburchLogo from "@/assets/toryburch-logo.webp";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 

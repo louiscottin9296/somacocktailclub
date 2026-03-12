@@ -162,6 +162,7 @@ export const translations = {
         { title: "Hochzeit mit 200 Gästen", subtitle: "Tischservice + Bar" },
         { title: "Teambuilding-Event", subtitle: "Workshop-Stationen" },
       ],
+      trustedBy: "Vertraut von",
     },
     footer: {
       tagline: "Gemeinsame Momente erheben.",
