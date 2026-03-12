@@ -43,6 +43,15 @@ const Events = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 text-center">
+          <h3 className="font-serif italic text-2xl md:text-3xl text-foreground mb-10">{text.trustedBy}</h3>
+          <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap">
+            <img src={patchworkLogo} alt="Patchwork" className="h-6 md:h-8 object-contain brightness-0" />
+            <img src={salomonLogo} alt="Salomon" className="h-8 md:h-10 object-contain brightness-0" />
+            <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
+          </div>
+        </div>
       </div>
     </section>
   );
