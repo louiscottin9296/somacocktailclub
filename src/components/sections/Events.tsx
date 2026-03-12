@@ -36,7 +36,7 @@ const Events = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {text.items.map((event, index) => (
             <div key={index} className="group relative overflow-hidden">
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[3/4] overflow-hidden">
                 <img
                   src={images[index]}
                   alt={`${event.title} - SOMA Cocktail Club`}
