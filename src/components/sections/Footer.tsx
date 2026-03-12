@@ -31,7 +31,7 @@ const Footer = () => {
                 <AccordionTrigger className="text-primary-foreground/50 font-sans text-xs tracking-[0.2em] uppercase hover:text-accent hover:no-underline py-3 [&>svg]:text-primary-foreground/40">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-primary-foreground/60 font-sans text-sm leading-relaxed">
+                <AccordionContent className="text-primary-foreground/60 font-sans text-sm leading-relaxed whitespace-pre-line">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
