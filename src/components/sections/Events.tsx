@@ -12,6 +12,7 @@ import atelierDeLucaLogo from "@/assets/atelier-de-luca-logo.png";
 import hyperlineLogo from "@/assets/hyperline-logo.svg";
 import momentLogo from "@/assets/moment-logo.png";
 import pigmentLogo from "@/assets/pigment-logo.svg";
+import newLogo from "@/assets/Frame_1321316415.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 
