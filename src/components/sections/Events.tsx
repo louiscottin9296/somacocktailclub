@@ -64,12 +64,12 @@ const Events = () => {
             <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain ml-4 md:ml-8" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
           </div>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap -mt-8">
-            <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain brightness-0" />
-            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain brightness-0" />
-            <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain brightness-0" />
-            <img src={momentLogo} alt="Moment" className="h-12 md:h-16 object-contain brightness-0" />
-            <img src={pigmentLogo} alt="Pigment" className="h-5 md:h-6 object-contain brightness-0" />
-            <img src={newLogo} alt="New Partner" className="h-4 md:h-5 object-contain brightness-0" />
+            <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={momentLogo} alt="Moment" className="h-12 md:h-16 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={pigmentLogo} alt="Pigment" className="h-5 md:h-6 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={newLogo} alt="New Partner" className="h-4 md:h-5 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
           </div>
         </div>
       </div>
