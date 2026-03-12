@@ -13,7 +13,7 @@ const Offers = () => {
   const numbers = ["01", "02", "03", "04"];
 
   return (
-    <section id="offers" className="py-24 md:py-32 bg-background">
+    <section id="offers" className="py-24 md:py-32 bg-card">
       <div className="container max-w-6xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           {text.label}
