@@ -51,6 +51,9 @@ const Events = () => {
         </div>
 
         <div className="mt-24 md:mt-32 text-center">
+          <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
+            {text.label}
+          </p>
           <h3 className="font-serif italic text-3xl md:text-5xl text-foreground mb-6">{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-10 md:gap-16 flex-wrap">
             <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain brightness-0" />
