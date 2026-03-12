@@ -202,11 +202,31 @@ export const translations = {
       tagline: "Gemeinsame Momente erheben.",
       faqTitle: "Häufig gestellte Fragen",
       faq: [
-        { question: "FAQ Frage 1", answer: "Textantwort 1" },
-        { question: "FAQ Frage 2", answer: "Textantwort 2" },
-        { question: "FAQ Frage 3", answer: "Textantwort 3" },
-        { question: "FAQ Frage 4", answer: "Textantwort 4" },
-        { question: "FAQ Frage 5", answer: "Textantwort 5" },
+        {
+          question: "Ist euer Angebot auf Cocktails beschränkt?",
+          answer:
+            "Ganz und gar nicht! Neben unseren Signature-Cocktails bieten wir ein vollständiges Getränkeangebot, darunter Wein, Champagner, Bier, Mocktails und andere alkoholfreie Optionen für jeden Geschmack.\n\nWir bieten auch Food-Catering über unsere vertrauenswürdigen Partner an, sodass ihr alles nur mit uns koordinieren müsst — für ein einheitliches und reibungsloses Erlebnis.",
+        },
+        {
+          question: "Welche Art von Events betreut ihr?",
+          answer:
+            "Wir betreuen alle Arten von Events: Firmenveranstaltungen, Hochzeiten, private Feiern und vieles mehr. Egal welcher Anlass — wir passen unseren Service an eure Bedürfnisse an.",
+        },
+        {
+          question: "Welche Eventgrößen betreut ihr?",
+          answer:
+            "Wir betreuen Events jeder Größe, von Workshops mit nur 5 Gästen bis hin zu großen Feiern mit bis zu 500 Teilnehmern. Kein Event ist uns zu groß oder zu klein!",
+        },
+        {
+          question: "Wo seid ihr tätig?",
+          answer:
+            "Wir sind sowohl in Paris als auch in Berlin ansässig und bedienen Kunden in ganz Frankreich und Deutschland. Für Events anderswo in Europa sprechen wir gerne über die Möglichkeiten — kontaktiert uns einfach!",
+        },
+        {
+          question: "Wie können wir euch kontaktieren?",
+          answer:
+            "Wenn ihr Fragen, Ideen habt oder einfach plaudern wollt — wir sind für euch da! Meldet euch jederzeit per E-Mail, Telefon oder Instagram. Alle Kontaktdaten findet ihr direkt hier unten.",
+        },
       ],
     },
   },
