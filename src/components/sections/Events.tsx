@@ -57,7 +57,7 @@ const Events = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
             {text.label}
           </p>
-          <h3 className="font-serif italic text-3xl md:text-5xl text-foreground mb-6">{text.trustedBy}</h3>
+          <h3 className="font-serif italic text-3xl md:text-5xl mb-6" style={{ color: '#525546' }}>{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap pl-4 md:pl-8">
             <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain brightness-0 mr-6 md:mr-10" />
             <img src={toryburchLogo} alt="Tory Burch" className="h-14 md:h-[68px] object-contain brightness-0" />
