@@ -111,6 +111,7 @@ export const translations = {
             "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below.",
         },
       ],
+      allRightsReserved: "All rights reserved.",
     },
   },
   de: {
