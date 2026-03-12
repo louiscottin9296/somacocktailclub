@@ -8,13 +8,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const faqItems = [
-  { question: "FAQ question 1", answer: "Text answer 1" },
-  { question: "FAQ question 2", answer: "Text answer 2" },
-  { question: "FAQ question 3", answer: "Text answer 3" },
-  { question: "FAQ question 4", answer: "Text answer 4" },
-  { question: "FAQ question 5", answer: "Text answer 5" },
-];
 
 const Footer = () => {
   const { language } = useLanguage();
@@ -26,10 +19,10 @@ const Footer = () => {
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
-            Frequently Asked Questions
+            {text.faqTitle}
           </h2>
           <Accordion type="single" collapsible className="max-w-2xl mx-auto">
-            {faqItems.map((item, index) => (
+            {text.faq.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`faq-${index}`}

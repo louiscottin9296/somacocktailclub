@@ -80,6 +80,14 @@ export const translations = {
     },
     footer: {
       tagline: "Elevating your moments of togetherness.",
+      faqTitle: "Frequently Asked Questions",
+      faq: [
+        { question: "FAQ question 1", answer: "Text answer 1" },
+        { question: "FAQ question 2", answer: "Text answer 2" },
+        { question: "FAQ question 3", answer: "Text answer 3" },
+        { question: "FAQ question 4", answer: "Text answer 4" },
+        { question: "FAQ question 5", answer: "Text answer 5" },
+      ],
     },
   },
   de: {
@@ -166,6 +174,14 @@ export const translations = {
     },
     footer: {
       tagline: "Gemeinsame Momente erheben.",
+      faqTitle: "Häufig gestellte Fragen",
+      faq: [
+        { question: "FAQ Frage 1", answer: "Textantwort 1" },
+        { question: "FAQ Frage 2", answer: "Textantwort 2" },
+        { question: "FAQ Frage 3", answer: "Textantwort 3" },
+        { question: "FAQ Frage 4", answer: "Textantwort 4" },
+        { question: "FAQ Frage 5", answer: "Textantwort 5" },
+      ],
     },
   },
 } as const;
