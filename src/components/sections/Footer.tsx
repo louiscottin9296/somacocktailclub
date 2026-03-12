@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto px-6">
         {/* FAQ Section */}
         <div className="mb-16">
-          <h2 className="font-serif italic text-3xl md:text-4xl text-primary-foreground/90 text-left max-w-2xl mx-auto mb-10">
+          <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
             Frequently Asked Questions
           </h2>
           <Accordion type="single" collapsible className="max-w-2xl mx-auto">
