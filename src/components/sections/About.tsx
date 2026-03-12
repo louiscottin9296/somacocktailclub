@@ -13,12 +13,12 @@ const About = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
             {text.label}
           </p>
-          <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-8 leading-tight">
+          <h2 className="font-serif italic text-3xl md:text-5xl mb-8 leading-tight" style={{ color: '#525546' }}>
             {text.title}
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p1}</p>
-          <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p2}</p>
-          <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">{text.p3}</p>
+          <p className="leading-relaxed mb-6 font-sans text-sm md:text-base" style={{ color: '#525546' }}>{text.p1}</p>
+          <p className="leading-relaxed mb-6 font-sans text-sm md:text-base" style={{ color: '#525546' }}>{text.p2}</p>
+          <p className="leading-relaxed font-sans text-sm md:text-base" style={{ color: '#525546' }}>{text.p3}</p>
         </div>
       </section>
 
