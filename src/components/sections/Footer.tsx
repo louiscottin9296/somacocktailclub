@@ -19,7 +19,7 @@ const Footer = () => {
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
-            Frequently Asked Questions
+            {text.faqTitle}
           </h2>
           <Accordion type="single" collapsible className="max-w-2xl mx-auto">
             {faqItems.map((item, index) => (
