@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8">
-            <img src={thtLogo} alt="SOMA Cocktail Club" className="w-36 md:w-48 mx-auto opacity-80" />
+            <img src={thtLogo} alt="SOMA Cocktail Club" className="w-36 md:w-48 mx-auto" style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(30%) saturate(500%) hue-rotate(10deg) brightness(100%)' }} />
           </div>
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
             {text.tagline}
