@@ -73,8 +73,8 @@ export const translations = {
         { title: "Rooftop Corporate Party", subtitle: "Mobile Bar" },
         { title: "Fashion Show After-party", subtitle: "Mobile Bar" },
         { title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-        { title: "Coworking Space Opening", subtitle: "Mobile Bar" },
-        { title: "Coworking Space Opening", subtitle: "Mobile Bar" },
+        { title: "Wine Bar", subtitle: "White Tablecloth" },
+        { title: "Coordination with ", subtitle: "Mobile Bar" },
         { title: "Private Indoor Event", subtitle: "White Tablecloth" },
         { title: "200-Person Wedding", subtitle: "Table Service + Bar" },
         { title: "Team Building Event", subtitle: "Workshop Stations" },
@@ -85,11 +85,31 @@ export const translations = {
       tagline: "Elevating your moments of togetherness.",
       faqTitle: "Frequently Asked Questions",
       faq: [
-        { question: "Is your service limited to cocktails?", answer: "Not at all! In addition to our signature cocktails, we offer a full range of beverages, including wine, champagne, beer, mocktails, and non-alcoholic options to suit every guest's preference." },
-        { question: "What kinds of events do you cater?", answer: "We serve all types of events: corporate gatherings, weddings, private parties, and more. Whatever the occasion, we adapt our service to meet your needs." },
-        { question: "What size events do you cater?", answer: "We handle events of all sizes, from workshops with as few as 5 guests to large celebrations with up to 500 attendees. No event is too big or too small for us!" },
-        { question: "Where do you operate?", answer: "We are based in both Paris and Berlin, allowing us to serve clients throughout France and Germany. For events elsewhere in Europe, we're happy to discuss possibilities — just reach out!" },
-        { question: "How can we contact you?", answer: "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below." },
+        {
+          question: "Is your service limited to cocktails?",
+          answer:
+            "Not at all! In addition to our signature cocktails, we offer a full range of beverages, including wine, champagne, beer, mocktails, and non-alcoholic options to suit every guest's preference. We also offer food catering through our trusted partners, so you only need to coordinate with us for a unified & seamless experience.",
+        },
+        {
+          question: "What kinds of events do you cater?",
+          answer:
+            "We serve all types of events: corporate gatherings, weddings, private parties, and more. Whatever the occasion, we adapt our service to meet your needs.",
+        },
+        {
+          question: "What size events do you cater?",
+          answer:
+            "We handle events of all sizes, from workshops with as few as 5 guests to large celebrations with up to 500 attendees. No event is too big or too small for us!",
+        },
+        {
+          question: "Where do you operate?",
+          answer:
+            "We are based in both Paris and Berlin, allowing us to serve clients throughout France and Germany. For events elsewhere in Europe, we're happy to discuss possibilities — just reach out!",
+        },
+        {
+          question: "How can we contact you?",
+          answer:
+            "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below.",
+        },
       ],
     },
   },
