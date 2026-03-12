@@ -152,7 +152,7 @@ export const translations = {
       title: "Signature Cocktails",
     },
     events: {
-      label: "Vertraut von",
+      label: "Unser Portfolio",
       title: "Aktuelle Events",
       items: [
         { title: "Eröffnung Coworking Space", subtitle: "Mobile Bar" },
