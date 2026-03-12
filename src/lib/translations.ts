@@ -80,6 +80,14 @@ export const translations = {
     },
     footer: {
       tagline: "Elevating your moments of togetherness.",
+      faqTitle: "Frequently Asked Questions",
+      faq: [
+        { question: "FAQ question 1", answer: "Text answer 1" },
+        { question: "FAQ question 2", answer: "Text answer 2" },
+        { question: "FAQ question 3", answer: "Text answer 3" },
+        { question: "FAQ question 4", answer: "Text answer 4" },
+        { question: "FAQ question 5", answer: "Text answer 5" },
+      ],
     },
   },
   de: {
