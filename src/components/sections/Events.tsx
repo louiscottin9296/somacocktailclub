@@ -12,6 +12,7 @@ import atelierDeLucaLogo from "@/assets/atelier-de-luca-logo.png";
 import hyperlineLogo from "@/assets/hyperline-logo.svg";
 import momentLogo from "@/assets/moment-logo.png";
 import pigmentLogo from "@/assets/pigment-logo.svg";
+import newLogo from "@/assets/Frame_1321316415.svg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
 
@@ -56,12 +57,13 @@ const Events = () => {
             <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain brightness-0" />
             <img src={toryburchLogo} alt="Tory Burch" className="h-12 md:h-14 object-contain brightness-0" />
           </div>
-          <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap mt-6">
-            <img src={dijoLogo} alt="Dijo" className="h-8 md:h-10 object-contain brightness-0" />
+          <div className="flex items-center justify-center gap-6 md:gap-10 flex-wrap mt-6 max-w-4xl mx-auto">
+            <img src={dijoLogo} alt="Dijo" className="h-24 md:h-28 object-contain brightness-0" />
             <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain brightness-0" />
             <img src={hyperlineLogo} alt="Hyperline" className="h-4 md:h-5 object-contain brightness-0" />
             <img src={momentLogo} alt="Moment" className="h-8 md:h-10 object-contain brightness-0" />
             <img src={pigmentLogo} alt="Pigment" className="h-4 md:h-5 object-contain brightness-0" />
+            <img src={newLogo} alt="New Partner" className="h-12 md:h-16 object-contain brightness-0" />
           </div>
         </div>
       </div>
