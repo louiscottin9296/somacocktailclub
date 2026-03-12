@@ -35,7 +35,7 @@ const Footer = () => {
                 value={`faq-${index}`}
                 className="border-b border-primary-foreground/10"
               >
-                <AccordionTrigger className="text-primary-foreground/80 font-sans text-sm tracking-wide hover:text-accent hover:no-underline py-5 [&>svg]:text-primary-foreground/40">
+                <AccordionTrigger className="text-primary-foreground/80 font-sans text-sm tracking-wide hover:text-accent hover:no-underline py-3 [&>svg]:text-primary-foreground/40">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-primary-foreground/60 font-sans text-sm leading-relaxed">
