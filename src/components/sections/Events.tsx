@@ -31,7 +31,7 @@ const Events = () => {
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           {text.label}
         </p>
-        <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-20 text-center">{text.title}</h2>
+        <h2 className="font-serif italic text-3xl md:text-5xl mb-20 text-center" style={{ color: '#525546' }}>{text.title}</h2>
 
         <div className="grid md:grid-cols-3 gap-6">
           {text.items.map((event, index) => (
@@ -57,19 +57,19 @@ const Events = () => {
           <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
             {text.label}
           </p>
-          <h3 className="font-serif italic text-3xl md:text-5xl text-foreground mb-6">{text.trustedBy}</h3>
+          <h3 className="font-serif italic text-3xl md:text-5xl mb-6" style={{ color: '#525546' }}>{text.trustedBy}</h3>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap pl-4 md:pl-8">
-            <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain brightness-0 mr-6 md:mr-10" />
-            <img src={toryburchLogo} alt="Tory Burch" className="h-14 md:h-[68px] object-contain brightness-0" />
-            <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain brightness-0 ml-4 md:ml-8" />
+            <img src={patchworkLogo} alt="Patchwork" className="h-5 md:h-6 object-contain mr-6 md:mr-10" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={toryburchLogo} alt="Tory Burch" className="h-14 md:h-[68px] object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={salomonLogo} alt="Salomon" className="h-32 md:h-40 object-contain ml-4 md:ml-8" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
           </div>
           <div className="flex items-center justify-center gap-4 md:gap-6 flex-wrap -mt-8">
-            <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain brightness-0" />
-            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain brightness-0" />
-            <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain brightness-0" />
-            <img src={momentLogo} alt="Moment" className="h-12 md:h-16 object-contain brightness-0" />
-            <img src={pigmentLogo} alt="Pigment" className="h-5 md:h-6 object-contain brightness-0" />
-            <img src={newLogo} alt="New Partner" className="h-4 md:h-5 object-contain brightness-0" />
+            <img src={dijoLogo} alt="Dijo" className="h-20 md:h-28 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={atelierDeLucaLogo} alt="Atelier de Luca" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={hyperlineLogo} alt="Hyperline" className="h-6 md:h-8 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={momentLogo} alt="Moment" className="h-12 md:h-16 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={pigmentLogo} alt="Pigment" className="h-5 md:h-6 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
+            <img src={newLogo} alt="New Partner" className="h-4 md:h-5 object-contain" style={{ filter: 'brightness(0) sepia(1) hue-rotate(50deg) saturate(0.3) brightness(0.35)' }} />
           </div>
         </div>
       </div>
