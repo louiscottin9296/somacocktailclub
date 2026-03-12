@@ -73,7 +73,7 @@ const Footer = () => {
           </div>
           <div className="border-t border-primary-foreground/10 pt-8 w-full">
             <p className="text-primary-foreground/30 text-xs font-sans tracking-wider">
-              © {new Date().getFullYear()} SOMA Cocktail Club. All rights reserved.
+              © {new Date().getFullYear()} SOMA Cocktail Club. {text.allRightsReserved}
             </p>
           </div>
         </div>
