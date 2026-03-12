@@ -76,7 +76,7 @@ export const translations = {
         { title: "200-Person Wedding", subtitle: "Table Service + Bar" },
         { title: "Team Building Event", subtitle: "Workshop Stations" },
       ],
-      trustedBy: "Trusted by",
+      trustedBy: "Recent Partners",
     },
     footer: {
       tagline: "Elevating your moments of togetherness.",
@@ -162,7 +162,7 @@ export const translations = {
         { title: "Hochzeit mit 200 Gästen", subtitle: "Tischservice + Bar" },
         { title: "Teambuilding-Event", subtitle: "Workshop-Stationen" },
       ],
-      trustedBy: "Vertraut von",
+      trustedBy: "Neueste Partner",
     },
     footer: {
       tagline: "Gemeinsame Momente erheben.",
