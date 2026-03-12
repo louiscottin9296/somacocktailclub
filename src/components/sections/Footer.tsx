@@ -11,18 +11,7 @@ const Footer = () => {
       <div className="container max-w-6xl mx-auto px-6">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8">
-            <div className="w-36 md:w-48 mx-auto" style={{ 
-              WebkitMaskImage: `url(${thtLogo})`, 
-              maskImage: `url(${thtLogo})`, 
-              WebkitMaskSize: 'contain', 
-              maskSize: 'contain', 
-              WebkitMaskRepeat: 'no-repeat', 
-              maskRepeat: 'no-repeat', 
-              WebkitMaskPosition: 'center', 
-              maskPosition: 'center', 
-              backgroundColor: '#eada9c', 
-              aspectRatio: '4/1' 
-            }} />
+            <img src={thtLogo} alt="SOMA Cocktail Club" className="w-36 md:w-48 mx-auto opacity-80" />
           </div>
           <p className="font-serif italic text-xl text-primary-foreground/80 mb-6 max-w-md">
             {text.tagline}
