@@ -46,7 +46,7 @@ const Gallery = () => {
   };
 
   return (
-    <section className="py-24 md:py-32 overflow-hidden" style={{ backgroundColor: '#9a9379' }}>
+    <section className="py-24 md:py-32 overflow-hidden" style={{ backgroundColor: '#f7f2ec' }}>
       <div className="container max-w-6xl mx-auto px-6">
         <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium text-center">
           {text.label}
