@@ -55,7 +55,7 @@ const Gallery = () => {
           {text.title}
         </h2>
 
-        <div className="relative h-[360px] md:h-[500px] touch-pan-y" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
+        <div className="relative h-[420px] md:h-[520px] touch-pan-y" onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}>
           {cocktails.map((src, i) => {
             const offset = getOffset(i);
             const isVisible = offset >= -2 && offset <= 2;
