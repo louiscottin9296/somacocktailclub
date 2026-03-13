@@ -111,7 +111,6 @@ export const translations = {
             "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below.",
         },
       ],
-      allRightsReserved: "All rights reserved.",
     },
   },
   de: {
@@ -206,7 +205,7 @@ export const translations = {
         {
           question: "Beschränkt sich Ihr Service auf Cocktails?",
           answer:
-            "Keineswegs! Neben unseren Signature-Cocktails bieten wir ein vollständiges Getränkeangebot an – darunter Wein, Champagner, Bier, Mocktails und weitere alkoholfreie Optionen, ganz nach dem Geschmack Ihrer Gäste. Über unsere vertrauenswürdigen Partner bieten wir außerdem Food-Catering an, sodass Sie alles aus einer Hand erhalten – für ein reibungsloses und stressfreies Erlebnis.",
+            "Ganz und gar nicht! Zusätzlich zu unseren Cocktails bieten wir eine umfassende Auswahl an Getränken, darunter Wein, Champagner, Bier, Mocktails und andere alkoholfreie Optionen, um den Vorlieben jedes Gastes gerecht zu werden. Wir bieten auch Food-Catering durch unsere vertrauenswürdigen Partner an, sodass Sie sich nur mit uns abstimmen müssen, um ein einheitliches und nahtloses Erlebnis zu genießen.",
         },
         {
           question: "Für welche Art von Veranstaltungen sind Sie zuständig?",
@@ -214,14 +213,14 @@ export const translations = {
             "Wir betreuen alle Arten von Events: Firmenveranstaltungen, Hochzeiten, Privatfeiern und vieles mehr. Ganz gleich, um welchen Anlass es sich handelt – wir passen unseren Service an Ihre Bedürfnisse an.",
         },
         {
-          question: "Für wie große Veranstaltungen sind Sie zuständig?",
+          question: "Für Veranstaltungen welcher Größe bieten Sie Ihre Dienstleistungen an?",
           answer:
             "Wir betreuen Events jeder Größe – von Workshops mit nur 5 Gästen bis hin zu großen Feiern mit bis zu 500 Personen. Kein Event ist uns zu groß oder zu klein!",
         },
         {
           question: "Wo sind Sie tätig?",
           answer:
-            "Wir sind sowohl in Paris als auch in Berlin ansässig und betreuen Kunden in ganz Frankreich und Deutschland. Für Events an anderen Orten in Europa besprechen wir gerne die Möglichkeiten – sprechen Sie uns einfach an!",
+            "Wir sind sowohl in Paris als auch in Berlin ansässig und betreuen Kunden in ganz Frankreich und Deutschland. Für Events an anderen Orten in Europa prüfen wir gerne die Möglichkeiten – sprechen Sie uns einfach an!",
         },
         {
           question: "Wie können wir Sie kontaktieren?",
@@ -229,7 +228,6 @@ export const translations = {
             "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Schreiben Sie uns jederzeit per E-Mail, rufen Sie uns an oder kontaktieren Sie uns über Instagram. Alle Kontaktdaten finden Sie direkt unten.",
         },
       ],
-      allRightsReserved: "Alle Rechte vorbehalten.",
     },
   },
 } as const;
