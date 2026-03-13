@@ -8,13 +8,43 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// Static language switcher for footer
+const FooterLanguageSwitcher = () => {
+  const { language, setLanguage } = useLanguage();
+
+  return (
+    <div className="flex items-center gap-1 font-sans text-xs tracking-[0.15em] uppercase">
+      <button
+        onClick={() => setLanguage("en")}
+        className={`px-2 py-1 transition-colors duration-200 ${
+          language === "en"
+            ? "text-[#f7f2ec]"
+            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
+        }`}
+      >
+        EN
+      </button>
+      <span className="text-[#f7f2ec]/30">|</span>
+      <button
+        onClick={() => setLanguage("de")}
+        className={`px-2 py-1 transition-colors duration-200 ${
+          language === "de"
+            ? "text-[#f7f2ec]"
+            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
+        }`}
+      >
+        DE
+      </button>
+    </div>
+  );
+};
 
 const Footer = () => {
   const { language } = useLanguage();
   const text = t(language).footer;
 
   return (
-    <footer className="py-16" style={{ backgroundColor: '#525546' }}>
+    <footer className="py-16 relative" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
         {/* FAQ Section */}
         <div className="mb-16">
@@ -84,10 +114,11 @@ const Footer = () => {
               Instagram
             </a>
           </div>
-          <div className="border-t border-primary-foreground/10 pt-8 w-full">
+          <div className="border-t border-primary-foreground/10 pt-8 w-full flex justify-between items-center">
             <p className="text-primary-foreground/30 text-xs font-sans tracking-wider">
               © {new Date().getFullYear()} SOMA Cocktail Club. {text.allRightsReserved}
             </p>
+            <FooterLanguageSwitcher />
           </div>
         </div>
       </div>
