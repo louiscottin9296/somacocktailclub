@@ -229,6 +229,7 @@ export const translations = {
             "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Schreiben Sie uns jederzeit per E-Mail, rufen Sie uns an oder kontaktieren Sie uns über Instagram. Alle Kontaktdaten finden Sie direkt unten.",
         },
       ],
+      allRightsReserved: "Alle Rechte vorbehalten.",
     },
   },
 } as const;
