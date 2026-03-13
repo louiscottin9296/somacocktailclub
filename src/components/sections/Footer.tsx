@@ -8,6 +8,43 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+// Static language switcher for footer
+const FooterLanguageSwitcher = () => {
+  const { language, setLanguage } = useLanguage();
+
+  return (
+    <div className="flex items-center gap-1 font-sans text-xs tracking-[0.15em] uppercase">
+      <button
+        onClick={() => setLanguage("en")}
+        className={`px-2 py-1 transition-colors duration-200 ${
+          language === "en"
+            ? "text-[#f7f2ec]"
+            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
+        }`}
+      >
+        EN
+      </button>
+      <span className="text-[#f7f2ec]/30">|</span>
+      <button
+        onClick={() => setLanguage("de")}
+        className={`px-2 py-1 transition-colors duration-200 ${
+          language === "de"
+            ? "text-[#f7f2ec]"
+            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
+        }`}
+      >
+        DE
+      </button>
+    </div>
+  );
+};
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 
 const Footer = () => {
   const { language } = useLanguage();
