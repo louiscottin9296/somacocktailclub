@@ -38,20 +38,13 @@ const FooterLanguageSwitcher = () => {
     </div>
   );
 };
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
 
 const Footer = () => {
   const { language } = useLanguage();
   const text = t(language).footer;
 
   return (
-    <footer className="py-16" style={{ backgroundColor: '#525546' }}>
+    <footer className="py-16 relative" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
         {/* FAQ Section */}
         <div className="mb-16">
@@ -121,10 +114,11 @@ const Footer = () => {
               Instagram
             </a>
           </div>
-          <div className="border-t border-primary-foreground/10 pt-8 w-full">
+          <div className="border-t border-primary-foreground/10 pt-8 w-full flex justify-between items-center">
             <p className="text-primary-foreground/30 text-xs font-sans tracking-wider">
               © {new Date().getFullYear()} SOMA Cocktail Club. {text.allRightsReserved}
             </p>
+            <FooterLanguageSwitcher />
           </div>
         </div>
       </div>
