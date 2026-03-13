@@ -1,4 +1,4 @@
-import { createContext, useContext, ReactNode } from "react";
+import { createContext, useContext, ReactNode, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 type Language = "en" | "de";
@@ -18,6 +18,7 @@ export const useLanguage = () => useContext(LanguageContext);
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const hasAutoDetected = useRef(false);
 
   const language: Language = location.pathname.startsWith("/de") ? "de" : "en";
 
@@ -28,6 +29,23 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       navigate("/");
     }
   };
+
+  useEffect(() => {
+    // Only auto-detect if user is on root "/" and hasn't manually navigated to /de
+    if (hasAutoDetected.current || location.pathname !== "/") return;
+    hasAutoDetected.current = true;
+
+    fetch("https://ipapi.co/json/")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.country_code === "DE") {
+          navigate("/de", { replace: true });
+        }
+      })
+      .catch(() => {
+        // Silently fail — default to English
+      });
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
