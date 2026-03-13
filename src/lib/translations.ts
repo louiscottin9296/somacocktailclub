@@ -214,7 +214,7 @@ export const translations = {
             "Wir betreuen alle Arten von Events: Firmenveranstaltungen, Hochzeiten, Privatfeiern und vieles mehr. Ganz gleich, um welchen Anlass es sich handelt – wir passen unseren Service an Ihre Bedürfnisse an.",
         },
         {
-          question: "Für Veranstaltungen welcher Größe bieten Sie Ihre Dienstleistungen an?",
+          question: "Für wie viele Gäste bieten Sie Ihre Dienstleistungen an?",
           answer:
             "Wir betreuen Events jeder Größe – von Workshops mit nur 5 Gästen bis hin zu großen Feiern mit bis zu 500 Personen. Kein Event ist uns zu groß oder zu klein!",
         },
