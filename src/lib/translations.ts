@@ -185,7 +185,7 @@ export const translations = {
     },
     events: {
       label: "Unser Portfolio",
-      title: "Aktuelle Events",
+      title: "Neueste Events",
       items: [
         { title: "Eröffnung Coworking Space", subtitle: "Mobile Bar" },
         { title: "Rooftop Firmenfeier", subtitle: "Mobile Bar" },
