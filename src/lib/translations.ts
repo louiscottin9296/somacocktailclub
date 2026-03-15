@@ -117,7 +117,7 @@ export const translations = {
   de: {
     hero: {
       tagline: "Gemeinsame Momente erheben.",
-      subtitle: "Veranstaltungen · Mixologie · Catering",
+      subtitle: "Mixologie · Veranstaltungen · Catering",
       cta: "Entdecken Sie unser Angebot",
     },
     about: {
