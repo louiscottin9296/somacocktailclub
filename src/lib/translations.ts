@@ -2,7 +2,7 @@ export const translations = {
   en: {
     hero: {
       tagline: "Elevating your moments of togetherness.",
-      subtitle: "Events · Connection · Mixology",
+      subtitle: "Events · Mixology · Catering",
       cta: "Discover Our Offer",
     },
     about: {
@@ -117,7 +117,7 @@ export const translations = {
   de: {
     hero: {
       tagline: "Gemeinsame Momente erheben.",
-      subtitle: "Veranstaltungen · Verbindung · Mixologie",
+      subtitle: "Veranstaltungen · Mixologie · Catering",
       cta: "Entdecken Sie unser Angebot",
     },
     about: {
