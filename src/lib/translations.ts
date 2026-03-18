@@ -382,6 +382,7 @@ export const translations = {
       },
       allRightsReserved: "Tous droits réservés.",
     },
+    contactUs: "Contactez-nous",
   },
 } as const;
 
