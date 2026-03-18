@@ -51,11 +51,39 @@ const Footer = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const formspreeEndpoints: Record<string, string> = {
+    en: "https://formspree.io/f/mlgpapag",
+    de: "https://formspree.io/f/mlgpapag",
+    fr: "", // TODO: Add FR endpoint
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted:", formData);
-    toast({ title: text.contact.success });
-    setFormData({ firstName: "", lastName: "", email: "", phone: "", company: "", message: "" });
+    const endpoint = formspreeEndpoints[language];
+    if (!endpoint) {
+      toast({ title: "Form submission not yet configured for this language.", variant: "destructive" });
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        toast({ title: text.contact.success });
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", company: "", message: "" });
+      } else {
+        toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Network error. Please try again.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const inputClasses =
