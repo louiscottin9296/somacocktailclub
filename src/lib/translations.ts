@@ -241,6 +241,17 @@ export const translations = {
         },
       ],
       allRightsReserved: "Alle Rechte vorbehalten.",
+      contact: {
+        title: "Kontaktieren Sie uns",
+        firstName: "Vorname",
+        lastName: "Nachname",
+        email: "E-Mail",
+        phone: "Telefonnummer",
+        company: "Unternehmen (optional)",
+        message: "Wie können wir Ihnen helfen?",
+        send: "Senden",
+        success: "Nachricht erfolgreich gesendet!",
+      },
     },
   },
   fr: {
