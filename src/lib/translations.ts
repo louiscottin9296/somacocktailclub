@@ -124,6 +124,7 @@ export const translations = {
       },
       allRightsReserved: "All rights reserved.",
     },
+    contactUs: "Contact Us",
   },
   de: {
     hero: {
