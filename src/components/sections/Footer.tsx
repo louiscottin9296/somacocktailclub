@@ -65,6 +65,29 @@ const Footer = () => {
   return (
     <footer className="py-16 relative" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
+        {/* FAQ Section */}
+        <div className="mb-16">
+          <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
+            {text.faqTitle}
+          </h2>
+          <Accordion type="single" collapsible className="max-w-2xl mx-auto">
+            {text.faq.map((item, index) => (
+              <AccordionItem
+                key={index}
+                value={`faq-${index}`}
+                className="border-b border-primary-foreground/10"
+              >
+                <AccordionTrigger className="text-primary-foreground/50 font-sans text-xs tracking-[0.2em] uppercase hover:text-accent hover:no-underline py-3 [&>svg]:text-primary-foreground/40">
+                  {item.question}
+                </AccordionTrigger>
+                <AccordionContent className="text-primary-foreground/60 font-sans text-sm leading-relaxed whitespace-pre-line">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+
         {/* Contact Form */}
         <div className="mb-16">
           <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-8">
@@ -144,29 +167,6 @@ const Footer = () => {
               </button>
             </div>
           </form>
-        </div>
-
-        {/* FAQ Section */}
-        <div className="mb-16">
-          <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
-            {text.faqTitle}
-          </h2>
-          <Accordion type="single" collapsible className="max-w-2xl mx-auto">
-            {text.faq.map((item, index) => (
-              <AccordionItem
-                key={index}
-                value={`faq-${index}`}
-                className="border-b border-primary-foreground/10"
-              >
-                <AccordionTrigger className="text-primary-foreground/50 font-sans text-xs tracking-[0.2em] uppercase hover:text-accent hover:no-underline py-3 [&>svg]:text-primary-foreground/40">
-                  {item.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-primary-foreground/60 font-sans text-sm leading-relaxed whitespace-pre-line">
-                  {item.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
         </div>
 
         {/* Original Footer */}
