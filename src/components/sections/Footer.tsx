@@ -56,7 +56,7 @@ const Footer = () => {
   const formspreeEndpoints: Record<string, string> = {
     en: "https://formspree.io/f/mlgpapag",
     de: "https://formspree.io/f/mlgpapag",
-    fr: "", // TODO: Add FR endpoint
+    fr: "https://formspree.io/f/xnjglgwr",
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
