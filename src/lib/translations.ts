@@ -340,7 +340,7 @@ export const translations = {
     },
     footer: {
       tagline: "Sublimer vos moments de partage.",
-      faqTitle: "Questions fréquentes",
+      faqTitle: "FAQ — Questions fréquentes",
       faq: [
         {
           question: "Votre service se limite-t-il aux cocktails ?",
