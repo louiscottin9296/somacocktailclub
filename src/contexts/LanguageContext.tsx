@@ -1,7 +1,7 @@
 import { createContext, useContext, ReactNode, useEffect, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-type Language = "en" | "de";
+type Language = "en" | "de" | "fr";
 
 interface LanguageContextType {
   language: Language;
