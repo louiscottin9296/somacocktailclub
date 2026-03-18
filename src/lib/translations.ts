@@ -108,21 +108,10 @@ export const translations = {
         {
           question: "How can we contact you?",
           answer:
-            "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime by email, phone, or Instagram. All our contact details are right below.",
+            "If you have any questions, ideas, or just want to chat, we're here to help! Reach out anytime via the form below, or by email, phone, or Instagram. All our contact details are right below.",
         },
       ],
       allRightsReserved: "All rights reserved.",
-      contact: {
-        title: "Get in Touch",
-        firstName: "First Name",
-        lastName: "Last Name",
-        email: "Email",
-        phone: "Phone Number",
-        company: "Company (optional)",
-        message: "How can we assist you?",
-        send: "Send",
-        success: "Message sent successfully!",
-      },
     },
   },
   de: {
@@ -237,21 +226,10 @@ export const translations = {
         {
           question: "Wie können wir Sie kontaktieren?",
           answer:
-            "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Schreiben Sie uns jederzeit per E-Mail, rufen Sie uns an oder kontaktieren Sie uns über Instagram. Alle Kontaktdaten finden Sie direkt unten.",
+            "Bei Fragen, Ideen oder einfach für ein erstes Gespräch – wir sind für Sie da! Kontaktieren Sie uns über das untenstehende Formular, oder per E-Mail, Telefon oder Instagram. Alle Kontaktdaten finden Sie direkt unten.",
         },
       ],
       allRightsReserved: "Alle Rechte vorbehalten.",
-      contact: {
-        title: "Kontaktieren Sie uns",
-        firstName: "Vorname",
-        lastName: "Nachname",
-        email: "E-Mail",
-        phone: "Telefonnummer",
-        company: "Unternehmen (optional)",
-        message: "Wie können wir Ihnen helfen?",
-        send: "Senden",
-        success: "Nachricht erfolgreich gesendet!",
-      },
     },
   },
   fr: {
@@ -363,21 +341,10 @@ export const translations = {
         {
           question: "Comment vous contacter ?",
           answer:
-            "Si vous avez des questions, des idées ou simplement envie d’échanger avec nous, nous serons ravis de vous répondre ! Contactez-nous par email, téléphone ou Instagram. Toutes nos coordonnées se trouvent ci-dessous.",
+            "Si vous avez des questions, des idées ou simplement envie d’échanger avec nous, nous serons ravis de vous répondre ! Contactez-nous nous via le formulaire ci-dessous, ou par email, téléphone ou Instagram. Toutes nos coordonnées se trouvent ci-dessous.",
         },
       ],
       allRightsReserved: "Tous droits réservés.",
-      contact: {
-        title: "Contactez-nous",
-        firstName: "Prénom",
-        lastName: "Nom",
-        email: "Email",
-        phone: "Téléphone",
-        company: "Entreprise (optionnel)",
-        message: "Comment pouvons-nous vous aider ?",
-        send: "Envoyer",
-        success: "Message envoyé avec succès !",
-      },
     },
   },
 } as const;
