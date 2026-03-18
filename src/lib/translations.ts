@@ -254,6 +254,8 @@ export const translations = {
       },
       allRightsReserved: "Alle Rechte vorbehalten.",
     },
+    contactUs: "Kontaktieren Sie uns",
+  },
   },
   fr: {
     hero: {
