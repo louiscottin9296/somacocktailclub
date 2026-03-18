@@ -1,3 +1,4 @@
+import { useState } from "react";
 import thtLogo from "@/assets/tht-logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
@@ -7,6 +8,10 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+import { toast } from "@/hooks/use-toast";
 
 // Static language switcher for footer
 const FooterLanguageSwitcher = () => {
