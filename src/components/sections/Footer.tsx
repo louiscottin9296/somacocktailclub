@@ -42,9 +42,110 @@ const Footer = () => {
   const { language } = useLanguage();
   const text = t(language).footer;
 
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Contact form submitted:", formData);
+    toast({ title: text.contact.success });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", company: "", message: "" });
+  };
+
+  const inputClasses =
+    "bg-transparent border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/30 focus-visible:ring-accent font-sans text-sm";
+  const labelClasses = "text-primary-foreground/50 font-sans text-xs tracking-[0.15em] uppercase";
+
   return (
     <footer className="py-16 relative" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
+        {/* Contact Form */}
+        <div className="mb-16">
+          <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-8">
+            {text.contact.title}
+          </h2>
+          <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-5">
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="firstName" className={labelClasses}>{text.contact.firstName}</Label>
+                <Input
+                  id="firstName"
+                  value={formData.firstName}
+                  onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                  required
+                  className={inputClasses}
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="lastName" className={labelClasses}>{text.contact.lastName}</Label>
+                <Input
+                  id="lastName"
+                  value={formData.lastName}
+                  onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                  required
+                  className={inputClasses}
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="email" className={labelClasses}>{text.contact.email}</Label>
+              <Input
+                id="email"
+                type="email"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                required
+                className={inputClasses}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="phone" className={labelClasses}>{text.contact.phone}</Label>
+              <Input
+                id="phone"
+                type="tel"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                required
+                className={inputClasses}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="company" className={labelClasses}>{text.contact.company}</Label>
+              <Input
+                id="company"
+                value={formData.company}
+                onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                className={inputClasses}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="message" className={labelClasses}>{text.contact.message}</Label>
+              <Textarea
+                id="message"
+                value={formData.message}
+                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                required
+                rows={4}
+                className={inputClasses}
+              />
+            </div>
+            <div className="text-center pt-2">
+              <button
+                type="submit"
+                className="font-sans text-xs tracking-[0.2em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-8 py-3 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors duration-200"
+              >
+                {text.contact.send}
+              </button>
+            </div>
+          </form>
+        </div>
+
         {/* FAQ Section */}
         <div className="mb-16">
           <h2 className="font-serif italic text-2xl md:text-3xl text-primary-foreground/90 text-center mb-4">
