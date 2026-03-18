@@ -124,6 +124,7 @@ export const translations = {
       },
       allRightsReserved: "All rights reserved.",
     },
+    contactUs: "Contact Us",
   },
   de: {
     hero: {
@@ -253,6 +254,7 @@ export const translations = {
       },
       allRightsReserved: "Alle Rechte vorbehalten.",
     },
+    contactUs: "Kontaktieren Sie uns",
   },
   fr: {
     hero: {
@@ -379,6 +381,7 @@ export const translations = {
       },
       allRightsReserved: "Tous droits réservés.",
     },
+    contactUs: "Contactez-nous",
   },
 } as const;
 

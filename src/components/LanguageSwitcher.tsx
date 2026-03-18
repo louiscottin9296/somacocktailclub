@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { t } from "@/lib/translations";
 
 const LIGHT_SECTION_SELECTORS = [
   "section.about-section",
@@ -14,7 +15,7 @@ const LanguageSwitcher = () => {
 
   useEffect(() => {
     const checkOverlap = () => {
-      const switcherY = 40; // approx vertical center of the fixed switcher
+      const switcherY = 40;
       const lightSections = document.querySelectorAll(
         LIGHT_SECTION_SELECTORS.join(", ")
       );
@@ -39,22 +40,32 @@ const LanguageSwitcher = () => {
     : "text-primary-foreground/40 hover:text-primary-foreground/70";
   const separator = onLight ? "text-foreground/30" : "text-primary-foreground/30";
 
+  const contactLabel = t(language).contactUs;
+
   return (
-    <div className="fixed top-6 right-6 z-50 flex items-center gap-1 font-sans text-xs tracking-[0.15em] uppercase">
-      {(["en", "de", "fr"] as const).map((lang, i) => (
-        <span key={lang} className="flex items-center">
-          {i > 0 && <span className={separator}>|</span>}
-          <button
-            onClick={() => setLanguage(lang)}
-            className={`px-2 py-1 transition-colors duration-200 ${
-              language === lang ? base : dimmed
-            }`}
-          >
-            {lang.toUpperCase()}
-          </button>
-        </span>
-      ))}
-    </div>
+    <>
+      <a
+        href="#contact"
+        className={`fixed top-6 left-6 z-50 font-sans text-xs tracking-[0.15em] uppercase px-2 py-1 transition-colors duration-200 ${base}`}
+      >
+        {contactLabel}
+      </a>
+      <div className="fixed top-6 right-6 z-50 flex items-center gap-1 font-sans text-xs tracking-[0.15em] uppercase">
+        {(["en", "de", "fr"] as const).map((lang, i) => (
+          <span key={lang} className="flex items-center">
+            {i > 0 && <span className={separator}>|</span>}
+            <button
+              onClick={() => setLanguage(lang)}
+              className={`px-2 py-1 transition-colors duration-200 ${
+                language === lang ? base : dimmed
+              }`}
+            >
+              {lang.toUpperCase()}
+            </button>
+          </span>
+        ))}
+      </div>
+    </>
   );
 };
 

@@ -91,7 +91,7 @@ const Footer = () => {
   const labelClasses = "text-primary-foreground/50 font-sans text-xs tracking-[0.15em] uppercase";
 
   return (
-    <footer className="py-16 relative" style={{ backgroundColor: '#525546' }}>
+    <footer id="contact" className="py-16 relative" style={{ backgroundColor: '#525546' }}>
       <div className="container max-w-6xl mx-auto px-6">
         {/* FAQ Section */}
         <div className="mb-16">
