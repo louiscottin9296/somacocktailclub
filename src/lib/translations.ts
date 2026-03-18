@@ -367,6 +367,17 @@ export const translations = {
         },
       ],
       allRightsReserved: "Tous droits réservés.",
+      contact: {
+        title: "Contactez-nous",
+        firstName: "Prénom",
+        lastName: "Nom",
+        email: "Email",
+        phone: "Téléphone",
+        company: "Entreprise (optionnel)",
+        message: "Comment pouvons-nous vous aider ?",
+        send: "Envoyer",
+        success: "Message envoyé avec succès !",
+      },
     },
   },
 } as const;
