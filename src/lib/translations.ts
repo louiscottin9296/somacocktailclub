@@ -112,7 +112,7 @@ export const translations = {
         },
       ],
       contact: {
-        title: "Get in Touch",
+        title: "Contact us",
         firstName: "First Name",
         lastName: "Last Name",
         email: "Email",
