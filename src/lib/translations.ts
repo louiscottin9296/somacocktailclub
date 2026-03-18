@@ -256,7 +256,6 @@ export const translations = {
     },
     contactUs: "Kontaktieren Sie uns",
   },
-  },
   fr: {
     hero: {
       tagline: "Sublimer vos moments de partage.",
