@@ -46,6 +46,8 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       .then((data) => {
         if (data?.country_code === "DE") {
           navigate("/de", { replace: true });
+        } else if (data?.country_code === "FR") {
+          navigate("/fr", { replace: true });
         }
       })
       .catch(() => {
