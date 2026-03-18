@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <section className="py-16 md:py-24 bg-card">
+      <section className="about-section py-16 md:py-24 bg-card">
         <div className="container max-w-3xl mx-auto px-6 text-center">
           <p className="text-xs tracking-[0.3em] uppercase text-accent mb-4 font-sans font-medium">
             {text.label}
