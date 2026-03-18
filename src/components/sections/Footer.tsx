@@ -51,11 +51,39 @@ const Footer = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const formspreeEndpoints: Record<string, string> = {
+    en: "https://formspree.io/f/mlgpapag",
+    de: "https://formspree.io/f/mlgpapag",
+    fr: "", // TODO: Add FR endpoint
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Contact form submitted:", formData);
-    toast({ title: text.contact.success });
-    setFormData({ firstName: "", lastName: "", email: "", phone: "", company: "", message: "" });
+    const endpoint = formspreeEndpoints[language];
+    if (!endpoint) {
+      toast({ title: "Form submission not yet configured for this language.", variant: "destructive" });
+      return;
+    }
+    setIsSubmitting(true);
+    try {
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        toast({ title: text.contact.success });
+        setFormData({ firstName: "", lastName: "", email: "", phone: "", company: "", message: "" });
+      } else {
+        toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Network error. Please try again.", variant: "destructive" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const inputClasses =
@@ -161,9 +189,10 @@ const Footer = () => {
             <div className="text-center pt-2">
               <button
                 type="submit"
-                className="font-sans text-xs tracking-[0.2em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-8 py-3 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors duration-200"
+                disabled={isSubmitting}
+                className="font-sans text-xs tracking-[0.2em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-8 py-3 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {text.contact.send}
+                {isSubmitting ? "..." : text.contact.send}
               </button>
             </div>
           </form>
