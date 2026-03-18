@@ -232,7 +232,122 @@ export const translations = {
       allRightsReserved: "Alle Rechte vorbehalten.",
     },
   },
+  fr: {
+    hero: {
+      tagline: "Sublimer vos moments de partage.",
+      subtitle: "Événements · Mixologie · Traiteur",
+      cta: "Découvrir notre offre",
+    },
+    about: {
+      label: "L'histoire de SOMA",
+      title: "À propos",
+      p1: "Notre projet est né d'une passion pour les cocktails d'exception et les expériences mémorables. Nous sommes spécialisés dans la création de boissons équilibrées et de haute qualité, et dans la mise en place d'un service bar traiteur irréprochable.",
+      p2: "Notre équipe est composée de passionnés de cocktails dévoués, qui apportent expertise, créativité et un engagement envers l'excellence garantissant de sublimer chaque occasion.",
+      p3: "Le partage est au cœur de notre démarche : nous sommes toujours à l'écoute de votre vision et nous nous efforçons de créer une expérience entièrement personnalisée et unique pour vous et vos invités.",
+    },
+    offers: {
+      label: "Ce que nous proposons",
+      title: "Nos offres",
+      items: [
+        {
+          title: "Organisation d'événements",
+          description:
+            "Un événement réussi commence par un bar de qualité. Nous apportons du caractère et une dimension supplémentaire à votre soirée. Nous prenons le temps de concevoir une expérience sur mesure qui répond à vos attentes et s'aligne parfaitement avec votre vision.",
+        },
+        {
+          title: "Menus cocktails signature",
+          description:
+            "Nous vous apportons nos conseils créatifs pour concevoir un menu haut de gamme et personnalisé. En proposant des boissons qui complètent le concept, la marque et la direction créative de l'événement, nous faisons en sorte que chaque événement soit unique et mémorable.",
+        },
+        {
+          title: "Personnel & exécution",
+          description:
+            "Nous recrutons parmi notre réseau de barmen experts et assurons l'exécution de l'événement pour vous, ou formons votre équipe existante en partageant tous nos meilleurs conseils. Nous prenons en compte le temps de préparation de chaque cocktail, en maintenant le ratio idéal rapidité-qualité à chaque étape.",
+        },
+        {
+          title: "Ateliers cocktails",
+          description:
+            "Nous vous initions au monde de la mixologie et à l'histoire des cocktails — pour que vous puissiez préparer des cocktails d'exception chez vous. Nous proposons également des ateliers sans alcool, où vous découvrirez des alternatives maison tout aussi passionnantes.",
+        },
+      ],
+    },
+    howItWorks: {
+      label: "Simple & fluide",
+      title: "Comment ça marche ?",
+      subtitle: "Aussi simple que possible : un événement inoubliable en 4 étapes.",
+      steps: [
+        { title: "Échanger", description: "Nous discutons de vos besoins et créons une offre sur mesure." },
+        {
+          title: "Intégrer",
+          description:
+            "Nous nous intégrons parfaitement et travaillons main dans la main avec vos autres prestataires, à chaque étape de votre événement.",
+        },
+        {
+          title: "Installer",
+          description: "Nous nous occupons de la livraison et installons votre bar personnalisé avant votre événement.",
+        },
+        {
+          title: "Santé !",
+          description: "Nos barmen experts préparent des cocktails d'exception pour vous et vos invités.",
+        },
+      ],
+      successTitle: "Votre événement est un succès.",
+      successSubtitle: "Partagez votre expérience avec votre réseau !",
+    },
+    gallery: {
+      label: "Nos créations",
+      title: "Cocktails signature",
+    },
+    events: {
+      label: "Notre portfolio",
+      title: "Événements récents",
+      items: [
+        { title: "Inauguration espace coworking", subtitle: "Bar mobile" },
+        { title: "Soirée corporate en rooftop", subtitle: "Bar mobile" },
+        { title: "After-party défilé de mode", subtitle: "Bar mobile" },
+        { title: "Inauguration espace coworking", subtitle: "Bar mobile" },
+        { title: "Bar à vins", subtitle: "Nappe blanche" },
+        { title: "Traiteur", subtitle: "Coordination avec nos partenaires" },
+        { title: "Événement privé en intérieur", subtitle: "Nappe blanche" },
+        { title: "Mariage de 200 personnes", subtitle: "Service à table + Bar" },
+        { title: "Team building", subtitle: "Stations atelier" },
+      ],
+      trustedBy: "Ils nous font confiance",
+    },
+    footer: {
+      tagline: "Sublimer vos moments de partage.",
+      faqTitle: "Questions fréquentes",
+      faq: [
+        {
+          question: "Votre service se limite-t-il aux cocktails ?",
+          answer:
+            "Pas du tout ! En plus de nos cocktails signature, nous proposons une gamme complète de boissons : vin, champagne, bière, mocktails et autres options sans alcool pour satisfaire tous les goûts. Nous proposons également un service traiteur via nos partenaires de confiance, pour une expérience unifiée et fluide.",
+        },
+        {
+          question: "Quels types d'événements prenez-vous en charge ?",
+          answer:
+            "Nous intervenons sur tous types d'événements : soirées d'entreprise, mariages, fêtes privées, et bien plus. Quel que soit l'occasion, nous adaptons notre service à vos besoins.",
+        },
+        {
+          question: "Pour combien de convives intervenez-vous ?",
+          answer:
+            "Nous gérons des événements de toutes tailles, des ateliers dès 5 invités jusqu'aux grandes célébrations de 500 personnes. Aucun événement n'est trop grand ou trop petit pour nous !",
+        },
+        {
+          question: "Où intervenez-vous ?",
+          answer:
+            "Nous sommes basés à Paris et à Berlin, ce qui nous permet d'intervenir dans toute la France et l'Allemagne. Pour des événements ailleurs en Europe, nous sommes ouverts à la discussion — contactez-nous !",
+        },
+        {
+          question: "Comment nous contacter ?",
+          answer:
+            "Pour toute question, idée, ou simplement pour échanger, nous sommes là ! Contactez-nous par email, téléphone ou Instagram. Toutes nos coordonnées sont juste en dessous.",
+        },
+      ],
+      allRightsReserved: "Tous droits réservés.",
+    },
+  },
 } as const;
 
-export type Language = "en" | "de";
+export type Language = "en" | "de" | "fr";
 export const t = (lang: Language) => translations[lang];

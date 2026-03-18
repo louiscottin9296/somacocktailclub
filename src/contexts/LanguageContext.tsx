@@ -20,11 +20,17 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const navigate = useNavigate();
   const hasAutoDetected = useRef(false);
 
-  const language: Language = location.pathname.startsWith("/de") ? "de" : "en";
+  const language: Language = location.pathname.startsWith("/de")
+    ? "de"
+    : location.pathname.startsWith("/fr")
+      ? "fr"
+      : "en";
 
   const setLanguage = (lang: Language) => {
     if (lang === "de") {
       navigate("/de");
+    } else if (lang === "fr") {
+      navigate("/fr");
     } else {
       navigate("/");
     }
