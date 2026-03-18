@@ -189,9 +189,10 @@ const Footer = () => {
             <div className="text-center pt-2">
               <button
                 type="submit"
-                className="font-sans text-xs tracking-[0.2em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-8 py-3 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors duration-200"
+                disabled={isSubmitting}
+                className="font-sans text-xs tracking-[0.2em] uppercase text-primary-foreground/70 border border-primary-foreground/20 px-8 py-3 hover:bg-primary-foreground/10 hover:text-primary-foreground transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {text.contact.send}
+                {isSubmitting ? "..." : text.contact.send}
               </button>
             </div>
           </form>
