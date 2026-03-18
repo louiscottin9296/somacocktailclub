@@ -112,6 +112,17 @@ export const translations = {
         },
       ],
       allRightsReserved: "All rights reserved.",
+      contact: {
+        title: "Get in Touch",
+        firstName: "First Name",
+        lastName: "Last Name",
+        email: "Email",
+        phone: "Phone Number",
+        company: "Company (optional)",
+        message: "How can we assist you?",
+        send: "Send",
+        success: "Message sent successfully!",
+      },
     },
   },
   de: {
