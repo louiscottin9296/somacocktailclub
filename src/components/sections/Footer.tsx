@@ -14,27 +14,21 @@ const FooterLanguageSwitcher = () => {
 
   return (
     <div className="flex items-center gap-1 font-sans text-xs tracking-[0.15em] uppercase">
-      <button
-        onClick={() => setLanguage("en")}
-        className={`px-2 py-1 transition-colors duration-200 ${
-          language === "en"
-            ? "text-[#f7f2ec]"
-            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
-        }`}
-      >
-        EN
-      </button>
-      <span className="text-[#f7f2ec]/30">|</span>
-      <button
-        onClick={() => setLanguage("de")}
-        className={`px-2 py-1 transition-colors duration-200 ${
-          language === "de"
-            ? "text-[#f7f2ec]"
-            : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
-        }`}
-      >
-        DE
-      </button>
+      {(["en", "de", "fr"] as const).map((lang, i) => (
+        <span key={lang} className="flex items-center">
+          {i > 0 && <span className="text-[#f7f2ec]/30">|</span>}
+          <button
+            onClick={() => setLanguage(lang)}
+            className={`px-2 py-1 transition-colors duration-200 ${
+              language === lang
+                ? "text-[#f7f2ec]"
+                : "text-[#f7f2ec]/40 hover:text-[#f7f2ec]/70"
+            }`}
+          >
+            {lang.toUpperCase()}
+          </button>
+        </span>
+      ))}
     </div>
   );
 };
