@@ -227,12 +227,12 @@ const Footer = () => {
               hello@soma-cc.com
             </a>
             <a
-              href="https://wa.me/33772352185"
+              href="https://wa.me/491791566823"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
-              +33 7 72 35 21 85
+              +49 (0) 179 156 6823
             </a>
             <a
               href="https://www.instagram.com/somacocktailclub/"
