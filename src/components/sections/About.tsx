@@ -16,6 +16,9 @@ const About = () => {
           <h2 className="font-serif italic text-3xl md:text-5xl text-foreground mb-8 leading-tight">
             {text.title}
           </h2>
+          <p className="text-foreground/90 leading-relaxed mb-6 font-sans text-sm md:text-base font-medium">
+            {text.intro}
+          </p>
           <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p1}</p>
           <p className="text-muted-foreground leading-relaxed mb-6 font-sans text-sm md:text-base">{text.p2}</p>
           <p className="text-muted-foreground leading-relaxed font-sans text-sm md:text-base">{text.p3}</p>

@@ -17,9 +17,12 @@ const Hero = () => {
       <div className="relative z-10 text-center px-6 max-w-3xl">
         <img src={thtLogo} alt="SOMA Cocktail Club" className="w-48 md:w-64 lg:w-80 mx-auto mb-4 opacity-80" />
         <div className="w-16 h-px bg-accent mx-auto my-8" />
-        <p className="font-serif italic text-xl md:text-2xl text-primary-foreground/80 mb-8">{text.tagline}</p>
-        <p className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-primary-foreground/80 mb-12">
+        <h1 className="font-sans text-sm md:text-base tracking-[0.3em] uppercase text-primary-foreground/80 mb-8">
           {text.subtitle}
+        </h1>
+
+        <p className="font-serif italic text-xl md:text-2xl text-primary-foreground/80 mb-12">
+          {text.tagline}
         </p>
         <a
           href="#offers"

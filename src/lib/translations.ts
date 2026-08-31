@@ -1,13 +1,15 @@
 export const translations = {
   en: {
     hero: {
-      tagline: "Elevating your moments of togetherness.",
-      subtitle: "Events · Mixology · Catering",
+      tagline: "Mobile Bars · Bespoke Cocktail Menus · Tap Cocktails",
+      subtitle: "Premium Bar Catering – Berlin & Paris",
       cta: "Discover Our Offer",
     },
     about: {
       label: "SOMA's Story",
       title: "About Us",
+      intro:
+        "SOMA Cocktail Club provides premium cocktail catering, mobile bar services, and professional bartenders for corporate events, weddings, and celebrations of any kind in Berlin, Paris, and beyond.",
       p1: "Our project is built on a passion for exceptional cocktails and memorable experiences. We specialize in crafting balanced, high-quality drinks and delivering a seamless bar catering experience.",
       p2: "Our team consists of dedicated cocktail enthusiasts who bring expertise, creativity, and a commitment to excellence that is guaranteed to elevate any occasion.",
       p3: "Sharing is at the heart of what we do: we always listen to your vision and thrive to deliver a fully personalized & unique experience for you and your guests.",
@@ -82,7 +84,7 @@ export const translations = {
       trustedBy: "Trusted by",
     },
     footer: {
-      tagline: "Elevating your moments of togetherness.",
+      tagline: "Mobile Bars · Bespoke Cocktail Menus · Tap Cocktails",
       faqTitle: "Frequently Asked Questions",
       faq: [
         {
@@ -128,13 +130,15 @@ export const translations = {
   },
   de: {
     hero: {
-      tagline: "Gemeinsame Momente erheben.",
-      subtitle: "Mixologie · Veranstaltungen · Catering",
+      tagline: "Mobile Bars · Maßgeschneiderte Cocktailkarten · Cocktails vom Fass",
+      subtitle: "Premium Bar-Catering – Berlin & Paris",
       cta: "Entdecken Sie unser Angebot",
     },
     about: {
       label: "SOMA's Geschichte",
       title: "Unsere Werte",
+      intro:
+        "SOMA Cocktail Club bietet Premium-Cocktail-Catering, mobile Bar-Services und professionelle Bartender für Firmenevents, Hochzeiten und Feiern jeder Art in Berlin, Paris und darüber hinaus.",
       p1: "SOMA Cocktail Club entstand aus der Leidenschaft für außergewöhnliche Cocktails und unvergessliche Erlebnisse. Wir sind nicht nur auf die Kreation ausgewogener, hochwertiger Drinks spezialisiert, sondern sorgen auch für ein reibungsloses Bar-Catering-Erlebnis.",
       p2: "Unser Team besteht aus engagierten Cocktail-Enthusiasten, die Expertise, Kreativität und ein Streben nach Exzellenz mitbringen, sodass jede Veranstaltung auf ein neues Niveau gebracht wird.",
       p3: "Teilen steht im Mittelpunkt unserer Arbeit: Wir hören immer auf Ihre Vision und streben danach, ein vollständig personalisiertes und einzigartiges Erlebnis für Sie und Ihre Gäste zu schaffen.",
@@ -212,7 +216,7 @@ export const translations = {
       trustedBy: "Vertraut von",
     },
     footer: {
-      tagline: "Gemeinsame Momente erheben.",
+      tagline: "Mobile Bars · Maßgeschneiderte Cocktailkarten · Cocktails vom Fass",
       faqTitle: "FAQ — Häufig gestellte Fragen",
       faq: [
         {
@@ -258,13 +262,15 @@ export const translations = {
   },
   fr: {
     hero: {
-      tagline: "Sublimer vos moments de partage.",
-      subtitle: "Événements · Mixologie · Catering",
+      tagline: "Bars pour évènements - Cartes de cocktails sur mesure - Cocktails à la pression",
+      subtitle: "Bars mobiles premium – Berlin & Paris",
       cta: "Découvrir notre offre",
     },
     about: {
       label: "Notre histoire",
       title: "À propos",
+      intro:
+        "SOMA Cocktail Club propose un service de catering de cocktails haut de gamme, des bars mobiles et des bartenders professionnels pour les événements d'entreprise, mariages et célébrations en tout genre à Berlin, Paris et au-delà.",
       p1: "Notre projet est né d’une passion pour le service et les expériences mémorables. Nous sommes spécialisés dans la création de cocktails haut de gamme, tout en proposant un service de bar événementiel fluide et élégant.",
       p2: "Notre équipe est composée de passionnés qui apportent expertise, créativité et un véritable souci du détail afin de sublimer chaque événement.",
       p3: "Le partage est au cœur de notre démarche : nous sommes à l’écoute de votre vision et nous nous efforçons de créer une expérience entièrement personnalisée et unique pour vous et vos invités.",
@@ -339,7 +345,7 @@ export const translations = {
       trustedBy: "Ils nous font confiance",
     },
     footer: {
-      tagline: "Sublimer vos moments de partage.",
+      tagline: "Bars pour évènements - Cartes de cocktails sur mesure - Cocktails à la pression",
       faqTitle: "FAQ — Questions fréquentes",
       faq: [
         {
