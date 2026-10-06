@@ -1,6 +1,39 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js): Analytics + Ads, only loaded after cookie consent -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied'
+      });
+
+      window.loadGoogleTags = function () {
+        if (window.googleTagsLoaded) return;
+        window.googleTagsLoaded = true;
+        gtag('consent', 'update', {
+          ad_storage: 'granted',
+          ad_user_data: 'granted',
+          ad_personalization: 'granted',
+          analytics_storage: 'granted'
+        });
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-YFS1W6D3ZF';
+        document.head.appendChild(s);
+        gtag('js', new Date());
+        gtag('config', 'G-YFS1W6D3ZF');
+        gtag('config', 'AW-18459613326');
+      };
+
+      try {
+        if (localStorage.getItem('soma-cookie-consent') === 'granted') window.loadGoogleTags();
+      } catch (e) {}
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOMA Cocktail Club — Premium Cocktail Catering</title>

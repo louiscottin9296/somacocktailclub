@@ -127,6 +127,13 @@ export const translations = {
       allRightsReserved: "All rights reserved.",
     },
     contactUs: "Contact Us",
+    cookies: {
+      message:
+        "We use cookies (Google Analytics & Google Ads) to understand how visitors use our site and to measure our ads. They are only set if you accept.",
+      accept: "Accept",
+      decline: "Decline",
+      settings: "Cookie settings",
+    },
   },
   de: {
     hero: {
@@ -259,6 +266,13 @@ export const translations = {
       allRightsReserved: "Alle Rechte vorbehalten.",
     },
     contactUs: "Kontaktieren Sie uns",
+    cookies: {
+      message:
+        "Wir verwenden Cookies (Google Analytics & Google Ads), um zu verstehen, wie Besucher unsere Website nutzen, und um unsere Werbung zu messen. Sie werden nur gesetzt, wenn Sie zustimmen.",
+      accept: "Akzeptieren",
+      decline: "Ablehnen",
+      settings: "Cookie-Einstellungen",
+    },
   },
   fr: {
     hero: {
@@ -388,6 +402,13 @@ export const translations = {
       allRightsReserved: "Tous droits réservés.",
     },
     contactUs: "Contactez-nous",
+    cookies: {
+      message:
+        "Nous utilisons des cookies (Google Analytics & Google Ads) pour comprendre comment les visiteurs utilisent notre site et mesurer nos publicités. Ils ne sont déposés que si vous acceptez.",
+      accept: "Accepter",
+      decline: "Refuser",
+      settings: "Paramètres des cookies",
+    },
   },
 } as const;
 

@@ -7,6 +7,7 @@ import Gallery from "@/components/sections/Gallery";
 import Events from "@/components/sections/Events";
 import Footer from "@/components/sections/Footer";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import CookieBanner from "@/components/CookieBanner";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <Gallery />
       <Events />
       <Footer />
+      <CookieBanner />
     </main>
   );
 };

@@ -12,6 +12,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
+import { openCookieSettings } from "@/components/CookieBanner";
 
 // Static language switcher for footer
 const FooterLanguageSwitcher = () => {
@@ -246,6 +247,10 @@ const Footer = () => {
           <div className="border-t border-primary-foreground/10 pt-8 w-full flex justify-between items-center">
             <p className="text-primary-foreground/30 text-xs font-sans tracking-wider">
               © {new Date().getFullYear()} SOMA Cocktail Club. {text.allRightsReserved}
+              {" · "}
+              <button onClick={openCookieSettings} className="hover:text-primary-foreground/60 transition-colors">
+                {t(language).cookies.settings}
+              </button>
             </p>
             <FooterLanguageSwitcher />
           </div>
