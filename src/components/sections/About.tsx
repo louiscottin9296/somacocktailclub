@@ -1,6 +1,15 @@
-import fullpageCocktail from "@/assets/fullpage-cocktail.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { t } from "@/lib/translations";
+
+// Photos come from the "SOMA-carousel-photos" folder (copied into src/assets/carousel
+// automatically when the preview starts). They are shown in file-name order.
+const carouselModules = import.meta.glob<string>("@/assets/carousel/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}", {
+  eager: true,
+  import: "default",
+});
+const stripImages = Object.keys(carouselModules)
+  .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
+  .map((key) => carouselModules[key]);
 
 const About = () => {
   const { language } = useLanguage();
@@ -25,12 +34,17 @@ const About = () => {
         </div>
       </section>
 
-      <section className="relative w-full min-h-[500px] md:min-h-[600px]">
-        <img
-          src={fullpageCocktail}
-          alt="SOMA cocktail experience"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+      <section className="relative w-full min-h-[500px] md:min-h-[600px] overflow-hidden">
+        <div className="hero-strip-track flex h-full w-max absolute inset-0">
+          {[...stripImages, ...stripImages].map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="Recent SOMA Cocktail Club event"
+              className="h-full w-auto max-w-none shrink-0"
+            />
+          ))}
+        </div>
       </section>
     </>
   );
