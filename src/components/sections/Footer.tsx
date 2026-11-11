@@ -42,6 +42,11 @@ const FooterLanguageSwitcher = () => {
 const Footer = () => {
   const { language } = useLanguage();
   const text = t(language).footer;
+  // Berlin address on the English and German versions, general address on the French one
+  const contactEmail = language === "fr" ? "hello@soma-cc.com" : "hello.berlin@soma-cc.com";
+  const contactPhone = language === "fr"
+    ? { label: "+49 (0) 179 156 6823", link: "https://wa.me/491791566823" }
+    : { label: "+49 (0) 179 5258 436", link: "https://wa.me/491795258436" };
 
   const [formData, setFormData] = useState({
     firstName: "",
@@ -222,18 +227,18 @@ const Footer = () => {
           </p>
           <div className="flex flex-col items-center gap-3 mb-10">
             <a
-              href="mailto:hello@soma-cc.com"
+              href={`mailto:${contactEmail}`}
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
-              hello@soma-cc.com
+              {contactEmail}
             </a>
             <a
-              href="https://wa.me/491791566823"
+              href={contactPhone.link}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/50 text-xs tracking-[0.2em] uppercase font-sans hover:text-accent transition-colors"
             >
-              +49 (0) 179 156 6823
+              {contactPhone.label}
             </a>
             <a
               href="https://www.instagram.com/somacocktailclub/"
